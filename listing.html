@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BL Realty® | Property Listing</title>
+<meta  charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script><!--navbar-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<style type="text/css">
+*{
+  font-family: 'Poppins';
+}
+.navbar .navbar-brand{
+  font-size: 1.2vw;
+  padding: 1.3vw 1.5vw;
+}
+.navbar ul li a{
+  font-size: 1.1vw;
+  padding: 1.3vw 1.5vw;
+}
+.nav .activee{
+  background-color: none;
+  border-bottom: .5vw solid #0FEE0B;
+}
+.nav li:nth-child(1):hover,.nav li:nth-child(3):hover,.nav li:nth-child(4):hover,.nav li:nth-child(5):hover{
+  border-bottom: .5vw solid #0FEE0B;
+}
+.navbar{
+  border: none;
+  z-index: 2;  
+}
+.navbar-right img{
+  width: 12vw;
+  height: 4vw;
+}
+/*sec_1*/
+.column_new{
+  float: left;
+  width: 100%;
+}
+.parallax_new {
+  background-image: url("image/mesilo-fff.jpg");
+  margin-top: -2.5vw;
+  min-height: 70vw; 
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(50% 17%, 100% 0, 100% 84%, 50% 100%, 0 84%, 0 0);
+  clip-path: polygon(50% 17%, 100% -1000000%, 100% 94%, 50% 100%, 0 94%, 0 -1000000%);
+}
+.center_new {
+  margin: 0 20vw;
+  padding-top: 20vw;
+  transform: translateY(-5vw);
+  position: absolute;
+  color: #3498DB;
+}
+.center_new h1{
+  font-size: 7vw;
+  font-weight: bold;
+}
+.center_new a{
+  display: inline-block;
+  font-size: 2.5vw;
+  text-decoration: none;
+  padding: 1vw 2vw;
+  background-color: #3498DB;
+  color: #fff;
+  border-radius: 50%;
+  margin-top: 1vw;
+}
+.center_new a:hover{
+  background-color: #fff;
+  color: #3498DB;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*sec_2*/
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.35);
+  margin: 8px 0px;
+}
+.hr-sect::before,
+.hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 8px;
+}
+.margin {
+  margin-top: 2vw;
+}
+.margin h2 {
+  font-size: 3vw;
+}
+.margin .hr-sect {
+  font-size: 1.3vw;
+  margin: 0 30vw;
+}
+.btn_back_top {
+  display: none;
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  z-index: 2;
+  font-size: 1vw;
+  border: none;
+  box-shadow: 0px 0px 0px 8px rgba(253,254,254,0.3);  
+  outline: none;
+  background: linear-gradient(360deg,#33ccff,#5DADE2);
+  color: #fff;
+  cursor: pointer;
+  padding: 1vw 1.3vw;
+  border-radius: .5vw;
+}
+.btn_back_top:hover {
+  filter: opacity(80%);
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*sec_3*/
+.column_search {
+  float: left;
+  box-sizing: border-box;
+}
+.row_search:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row_search{
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-top: 1vw;
+}
+.one_c {
+  width: 60%;
+}
+.two_c {
+  width: 40%;
+}
+#myInput {
+  font-size: 1.4vw;
+  padding: .9vw 2vw;
+  border: .1vw solid #ddd;
+  width: 100%;
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myUL li a {
+  display: none;
+  font-size: 0vw;
+}
+.btn_filter{
+  background-color: #0FEE0B;
+  color: #ffffff;
+  border: none;
+  font-size: 1.4vw;
+  padding: 1vw 4vw;
+  border-radius: 0;
+  width: 100%;
+}
+.btn_filter:hover{
+  opacity: 80%;
+}
+.dropdown li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2vw;
+  padding-right: 9.6vw; 
+}
+.btn_a{
+  cursor: pointer;
+}
+.btn_a:hover{
+  color: #3498DB;
+}
+.btn_a.active {
+  color: #3498DB;
+}
+.column {
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  margin-top: 2vw; 
+}
+.row {
+  margin: 0 5vw;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+  margin: auto;
+  width: 90%;
+}
+.card_inner {
+  position: relative;
+  z-index: 1;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  margin-top: -20px;
+}
+.card_inner:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.card .btn_right {
+  text-align: right;
+}
+.para {
+  text-align: left;
+  margin-left: 1.5vw;
+  font-size: 1.3vw;
+  line-height: 1.5vw;
+}
+.price {
+  padding-top: 1.8vw;
+}
+.grey {
+  color: #424949;
+}
+.bold {
+  font-size: 1.4vw;
+}
+.card button {
+  border-top-left-radius: 2.5vw;
+  margin-top: -60px;
+  border: none;
+  outline: 0;
+  padding: 1vw 1.3vw;
+  padding-bottom: .5vw;
+  color: white;
+  background:  linear-gradient(360deg,#33ccff,#5DADE2);
+  text-align: center;
+  cursor: pointer;
+}
+.card button:hover {
+  filter: opacity(80%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn_right .fafafa {
+  font-size: 1.5vw;
+}
+.error{
+  padding: 3vw 13vw;
+  display: none;
+}
+.in_error{
+   border: .1vw solid #000;
+   padding: 3vw 5vw;
+}
+.in_error h1{
+  font-size: 2.5vw;
+}
+.in_error li {
+  font-size: 1.3vw;
+}
+.in_error p{
+  font-size: 1.3vw;
+}
+.show {
+  display: block;
+}
+.filterDiv{
+  display: none;
+}
+/*social_icon*/
+.net {
+  margin-top: 2vw;
+}
+.net ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left:0 !important;
+  padding: 0;
+}
+.net ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+/* footer social icons */
+.social-network a.instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.social-network a.icoFacebook:hover {
+  background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+  background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+  background-color:#BD3518;
+}
+.social-network a.youtube:hover {
+  background-color:#FF0000;
+}
+.social-network a.instagram:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.youtube:hover i {
+  color:#fff;
+}
+.social-network a.socialIcon:hover, .socialHoverClass {
+  color:#44BCDD;
+}
+.social-circle li a {
+  display:inline-block;
+  position:relative;
+  margin:0 auto 0 auto;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  text-align:center;
+  width: 4vw;
+  height: 4vw;
+  font-size: 1.5vw;
+}
+.social-circle li i {
+  margin:0;
+  line-height:5vw;
+  text-align: center;
+}
+.social-circle li a:hover i, .triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.social-circle i {
+  color: #3498DB;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.social-network a {
+  background-color: #ffffff;   
+}
+/*footer*/
+.end{
+  padding: .5vw .5vw;
+  background-color: #3498DB;
+  margin-top: 7vw;
+}
+.end a{
+  text-decoration: none;
+  font-size: 1vw;
+  color: #ffffff;
+}
+.end a:hover{
+  border-bottom: .1vw solid #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.end p{
+  padding: .5vw 0;
+  color: #ffffff;
+  font-size: 1vw;
+}
+.end h3{
+  margin-top: -.5vw;
+  font-size: 1.3vw;
+  color: #ffffff;
+}
+.meme {
+  position: fixed;
+  bottom: 2vw;
+  left: 2vw;
+  z-index: 2;
+  font-size: 4vw;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 0px 8px rgba(253,254,254,0.3); 
+  background: #006AFF;
+  color: #fff;
+  cursor: pointer;
+  padding: .3vw 1.2vw;
+  border-radius: 50%;
+}
+.meme:hover{
+  filter: opacity(80%);
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (max-width: 1050px){
+  .end{
+    padding: 10px .5vw;
+  }
+}
+@media (max-width: 1000px){
+  .nav .activee{
+    background-color: none;
+    border-bottom: 5px solid #0FEE0B;
+  }
+  .nav li:nth-child(1):hover,.nav li:nth-child(3):hover,.nav li:nth-child(4):hover,.nav li:nth-child(5):hover{
+    border-bottom: 5px solid #0FEE0B;
+  }
+  .navbar .navbar-brand{
+    font-size: 15px;
+    padding: 15px 15px;
+  }
+  .navbar ul li a{
+    font-size: 14px;
+    padding: 15px 15px;
+  }
+  .navbar-right img{
+    width: 165px;
+    height: 55px;
+  }
+  .center_new h1{
+    font-size: 60px;
+  }
+  .center_new a{
+    font-size: 25px;
+    padding: 15px 25px;
+    margin-top: 10px;
+  }
+  .margin .hr-sect {
+    font-size: 18px;
+    margin: 0;
+  }
+  .margin h2 {
+    font-size: 40px;
+  }
+  .row_search{
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+  #myInput {
+    font-size: 16px;
+    padding: 9px 20px;
+    border: 1px solid #ddd;
+  }
+  .btn_filter{
+    font-size: 16px;
+    padding: 10px 40px;
+  }
+  .dropdown li a{
+    font-size: 14px;
+    padding-right: 80px;
+  }
+  .btn_back_top {
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px; 
+    padding: 10px 15px;
+  }
+  .column {
+    margin-top: 20px; 
+  }
+  .para {
+    margin-left: 1.5vw;
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .price {
+  padding-top: 18px;
+  }
+  .grey {
+  color: grey;
+  }
+  .bold {
+  font-size: 15px;
+  }
+   .card button {
+    border-top-left-radius: 30px;
+    padding: 8px 17px;
+    font-size: 18px;
+  }
+  .btn_right .fafafa {
+    font-size: 20px;
+  }
+  .social-circle li a {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .social-circle li i {
+    line-height: 50px;
+  }
+  .net {
+    margin-top: 20px;
+  }
+  .end a{
+    font-size: 12px;
+  }
+  .end p{
+    font-size: 12px;
+  }
+  .end h3{
+    font-size: 15px;
+  }
+  .btn_back_top {
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+  .in_error h1{
+  font-size: 26px;
+  }
+  .in_error li {
+    font-size: 14px;
+  }
+  .in_error p{
+    font-size: 14px;
+  }
+  .meme {
+    bottom: 20px;
+    left: 20px;
+    font-size: 40px;
+    padding: 3px 12px;
+  }
+}
+@media (max-width: 991px){
+  .end{
+    margin-top: 3vw; 
+    padding: 10px .5vw;
+  }
+}
+@media (max-width: 890px){
+  .row_search{
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+@media (max-width: 835px){
+  .column {
+  width: 100%;
+  height: 100%;
+  }
+  .para {
+  margin-left: 4vw;
+  }
+}
+@media (max-width: 800px){
+  .error{
+    padding: 3vw 5vw;
+  }
+}
+@media (max-width: 767px){
+  .navbar-right img{
+    margin-left: -15px;
+  }
+}
+@media (max-width: 700px){
+  .row_search{
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+}
+@media (max-width: 680px){
+  .center_new{
+    margin: 0;
+  }
+}
+@media (max-width: 630px){
+  .one_c{
+    width: 100%;
+  }
+  .two_c{
+    width: 100%;
+  }
+  .dropdown li a{
+    padding-right: 130px;
+  }
+}
+@media (max-width: 549px){
+  .center_new{
+    margin: 0 3vw;
+    transform: translateY(-1vw);
+  }
+  .parallax_new {
+    min-height: 140vw;
+  }
+  .center_new h1{
+    font-size: 80px;
+  }
+  .margin {
+    margin-top: 0vw;
+  }
+}
+@media (max-width: 490px){
+  .center_new{
+    margin: 0 0vw;
+  }
+}
+@media (max-width: 460px){
+  .center_new h1{
+    font-size: 70px;
+  }
+}
+@media (max-width: 458px){
+  .margin {
+    margin-top: 0vw;
+  }
+}
+@media (max-width: 403px){
+  .center_new h1{
+    font-size: 65px;
+  }
+  .error{
+    padding: 3vw 3vw;
+  }
+}
+@media (max-width: 374px){
+  .center_new h1{
+    font-size: 60px;
+  }
+}
+@media (max-width: 346px){
+  .center_new h1{
+    font-size: 55px;
+  }
+}
+</style>
+</head>
+<body>
+<!-------------navbar---------------->
+<nav class="navbar navbar-default  navbar-fixed-top" style=" background-color: rgba(255, 255, 255 ,1)!important;-webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);">
+  <div class="container-fluid ">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand " href="index.html" style="color: #424949;">Beaulah Land Realty®</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html" >Home</a></li>
+        <li class="activee"><a href="listing.html" style="color: #424949;">Property Listing</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right icon">
+        <!--something to right-->
+        <img src="image/logss.png">
+      </ul>
+    </div>
+  </div>
+</nav>
+<!------------sec_1--------------->
+<div class="row_new" id="top">
+  <div class="column_new parallax_new"></div>
+  <div class="center_new w3-center">
+    <h1>Beaulah Land Realty<span style="color: #0FEE0B;"> Listing</span></h1>
+    <a href="#listing"><i class="fas fa-angle-double-down"></i></a>
+  </div>
+</div>
+<!------------sec_2---------------->
+<div class="margin" >
+  <h1 style="visibility: hidden; font-size: 1.5vw;">h</h1>
+  <div class="hr-sect w3-padding" id="listing">PROPERTY LISTING</div>
+  <h2 class="w3-center">A Brighter Home Just For You</h2>
+</div>
+
+<div class="row_search">
+  <div class="column_search one_c">
+      <input type="text" id="myInput"  autocomplete="off" maxlength="20" onkeyup="search()" placeholder="Search name, place, etc.. then hit 'Enter'" title="Type in a name or place">
+  </div>
+  <div class="column_search two_c">
+    <div class="dropdown">
+      <button class="btn_filter dropdown-toggle" id="btn_filter"  type="button" data-toggle="dropdown"><span>Show all</span> <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+      <ul class="dropdown-menu dropdown-menu-center" id="a_cont">
+        <ul>
+          <li><a class="btn_a all active be_active" onclick="filterSelection('all', 'Show All', 0)">Show All</a></li>
+        </ul>  
+        <li class="divider"></li>
+        <li><a>Property Type</a></li>
+        <li class="divider"></li>
+          <ul>
+            <li><a class="btn_a house" onclick="filterSelection('house','House', 1)">House</a></li>
+            <li><a class="btn_a condo" onclick="filterSelection('condo','Condominium units', 1)">Condo</a></li>
+            <li><a class="btn_a lot" onclick="filterSelection('lot','Lot', 1)">Lot</a></li>
+          </ul>
+        <li class="divider"></li>
+        <li><a>Province</a></li>
+        <li class="divider"></li>
+        <ul>
+          <li><a class="btn_a" onclick="filterSelection('cavite','Cavite', 1)">Cavite</a></li>
+          <li><a class="btn_a" onclick="filterSelection('batangas','Batangas', 1)">Batangas</a></li>
+          <li><a class="btn_a" onclick="filterSelection('manila','Manila', 1)">Manila</a></li>
+        </ul>
+        <li class="divider"></li>
+        <li><a>Developer</a></li>
+        <li class="divider"></li>
+        <ul>
+          <li><a class="btn_a" onclick="filterSelection('acacia','Acacia', 1)">Acacia</a></li>
+          <li><a class="btn_a" onclick="filterSelection('lucia','Sta. Lucia', 1)">Sta. Lucia</a></li>
+          <li><a class="btn_a" onclick="filterSelection('camella','Camella', 1)">Camella</a></li>
+        </ul>
+        <li class="divider"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="error" id="no_result">
+  <div class="in_error">
+    <h1 ><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Oppss! there is no such " <span class="such"></span> " in <span class="li_kind"></span>.</h1>
+    <h4>few things that you can search:</h4>
+    <ul>
+      <li><span class="d_zero">Place - (eg. Imus, Manila, Dasma, etc...)</span> </li>
+      <li><span class="d_one">Name of the house or village - (eg. Orchaed, Mesilo, Camella, etc...)</span></li>
+      <li><span class="d_two">Property Type - (eg. Condo Units, House, Lot, etc...)</span></li>
+      <li><span class="d_three">Developer name - (eg. Bria, Sta. Lucia, Ayala, etc...)</span></li>
+    </ul>
+    <p>Got Question or Suggestion? <a href="#">Message Us</a></p>
+  </div>  
+</div>
+
+
+<!--cards and modals-->
+<div class="row">
+  <ul id="myUL">
+
+    <li>
+      <a>a</a><!--search tag-->
+      <div class="column filterDiv house"><!--card_0-->
+        <div class="card">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" onclick="show_img(this, 'web')">
+          <div class="card_inner">
+            <div class="para">
+                <p class="price">₱1,500/mo.</p>
+              <p class="grey"><i class="fas fa-bed"></i> 1&nbsp;&nbsp; <i class="fas fa-toilet"></i> 1&nbsp;&nbsp; <i class="fas fa-chart-area"></i> 1,500 sqft</p>
+              <p class="bold">The Villa Verde</p>
+              <p style="color: #00b7c2;"><i class="fas fa-map-marker-alt"></i> Naic, Cavite</p>
+              </div>
+              <div class="btn_right">
+                <p><button onclick="openModal_0(event, 'id01', 'Details', 'city', 'tablink')"  class="fafafa"><i class="fas fa-info-circle" style="color: #ffffff;"></i></button></button></p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <a>b</a>
+      <div class="column filterDiv condo"><!--card_1-->
+        <div class="card">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" onclick="show_img(this, 'web')">
+          <div class="card_inner">
+            <div class="para">
+                <p class="price">₱1,500/mo.</p>
+              <p class="grey"><i class="fas fa-bed"></i> 2&nbsp;&nbsp; <i class="fas fa-toilet"></i> 1&nbsp;&nbsp; <i class="fas fa-chart-area"></i> 2,000 sqft</p>
+              <p class="bold">The Village</p>
+              <p style="color: #00b7c2;"><i class="fas fa-map-marker-alt"></i> Imus, Cavite</p>
+              </div>
+              <div class="btn_right">
+                <p><button onclick="openModal_0(event, 'id01_1', 'Details_1', 'city_1', 'tablink_1')" class="fafafa"><i class="fas fa-info-circle" style="color: #ffffff;"></i></button></button></p>
+              </div>
+          </div>  
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <a>c</a>    
+      <div class="column filterDiv lot"><!--card_2-->
+        <div class="card">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" onclick="show_img(this, 'web')">
+          <div class="card_inner">
+            <div class="para">
+                <p class="price">₱1,600/mo.</p>
+              <p class="grey"><i class="fas fa-bed"></i> 1&nbsp;&nbsp; <i class="fas fa-toilet"></i> 1&nbsp;&nbsp; <i class="fas fa-chart-area"></i> 1,800 sqft</p>
+              <p class="bold">The Golden City</p>
+              <p style="color: #00b7c2;"><i class="fas fa-map-marker-alt"></i> Dasma, Cavite</p>
+            </div>
+            <div class="btn_right">
+              <p><button onclick="openModal_0(event, 'id01_2', 'Details_2', 'city_2', 'tablink_2')"class="fafafa"><i class="fas fa-info-circle" style="color: #ffffff;"></i></button></button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <a>a</a>
+      <div class="column filterDiv house"><!--card_0-->
+        <div class="card">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" onclick="show_img(this, 'web')">
+          <div class="card_inner">
+            <div class="para">
+                <p class="price">₱1,500/mo.</p>
+              <p class="grey"><i class="fas fa-bed"></i> 1&nbsp;&nbsp; <i class="fas fa-toilet"></i> 1&nbsp;&nbsp; <i class="fas fa-chart-area"></i> 1,500 sqft</p>
+              <p class="bold">The Villa Verde</p>
+              <p style="color: #00b7c2;"><i class="fas fa-map-marker-alt"></i> Naic, Cavite</p>
+              </div>
+              <div class="btn_right">
+                <p><button onclick="openModal_0(event, 'id01', 'Details', 'city', 'tablink')"  class="fafafa"><i class="fas fa-info-circle" style="color: #ffffff;"></i></button></button></p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <a>b</a>
+      <div class="column filterDiv condo"><!--card_1-->
+        <div class="card">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" onclick="show_img(this, 'web')">
+          <div class="card_inner">
+            <div class="para">
+                <p class="price">₱1,500/mo.</p>
+              <p class="grey"><i class="fas fa-bed"></i> 2&nbsp;&nbsp; <i class="fas fa-toilet"></i> 1&nbsp;&nbsp; <i class="fas fa-chart-area"></i> 2,000 sqft</p>
+              <p class="bold">The Village</p>
+              <p style="color: #00b7c2;"><i class="fas fa-map-marker-alt"></i> Imus, Cavite</p>
+              </div>
+              <div class="btn_right">
+                <p><button onclick="openModal_0(event, 'id01_1', 'Details_1', 'city_1', 'tablink_1')" class="fafafa"><i class="fas fa-info-circle" style="color: #ffffff;"></i></button></button></p>
+              </div>
+          </div>  
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <a>c</a>    
+      <div class="column filterDiv lot"><!--card_2-->
+        <div class="card">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" onclick="show_img(this, 'web')">
+          <div class="card_inner">
+            <div class="para">
+                <p class="price">₱1,600/mo.</p>
+              <p class="grey"><i class="fas fa-bed"></i> 1&nbsp;&nbsp; <i class="fas fa-toilet"></i> 1&nbsp;&nbsp; <i class="fas fa-chart-area"></i> 1,800 sqft</p>
+              <p class="bold">The Golden City</p>
+              <p style="color: #00b7c2;"><i class="fas fa-map-marker-alt"></i> Dasma, Cavite</p>
+            </div>
+            <div class="btn_right">
+              <p><button onclick="openModal_0(event, 'id01_2', 'Details_2', 'city_2', 'tablink_2')"class="fafafa"><i class="fas fa-info-circle" style="color: #ffffff;"></i></button></button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <a>a</a>
+      <div class="column filterDiv house"><!--card_0-->
+        <div class="card">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" onclick="show_img(this, 'web')">
+          <div class="card_inner">
+            <div class="para">
+                <p class="price">₱1,500/mo.</p>
+              <p class="grey"><i class="fas fa-bed"></i> 1&nbsp;&nbsp; <i class="fas fa-toilet"></i> 1&nbsp;&nbsp; <i class="fas fa-chart-area"></i> 1,500 sqft</p>
+              <p class="bold">The Villa Verde</p>
+              <p style="color: #00b7c2;"><i class="fas fa-map-marker-alt"></i> Naic, Cavite</p>
+              </div>
+              <div class="btn_right">
+                <p><button onclick="openModal_0(event, 'id01', 'Details', 'city', 'tablink')"  class="fafafa"><i class="fas fa-info-circle" style="color: #ffffff;"></i></button></button></p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <a>b</a>
+      <div class="column filterDiv condo"><!--card_1-->
+        <div class="card">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" onclick="show_img(this, 'web')">
+          <div class="card_inner">
+            <div class="para">
+                <p class="price">₱1,500/mo.</p>
+              <p class="grey"><i class="fas fa-bed"></i> 2&nbsp;&nbsp; <i class="fas fa-toilet"></i> 1&nbsp;&nbsp; <i class="fas fa-chart-area"></i> 2,000 sqft</p>
+              <p class="bold">The Village</p>
+              <p style="color: #00b7c2;"><i class="fas fa-map-marker-alt"></i> Imus, Cavite</p>
+              </div>
+              <div class="btn_right">
+                <p><button onclick="openModal_0(event, 'id01_1', 'Details_1', 'city_1', 'tablink_1')" class="fafafa"><i class="fas fa-info-circle" style="color: #ffffff;"></i></button></button></p>
+              </div>
+          </div>  
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <a>c</a>    
+      <div class="column filterDiv lot"><!--card_2-->
+        <div class="card">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" onclick="show_img(this, 'web')">
+          <div class="card_inner">
+            <div class="para">
+                <p class="price">₱1,600/mo.</p>
+              <p class="grey"><i class="fas fa-bed"></i> 1&nbsp;&nbsp; <i class="fas fa-toilet"></i> 1&nbsp;&nbsp; <i class="fas fa-chart-area"></i> 1,800 sqft</p>
+              <p class="bold">The Golden City</p>
+              <p style="color: #00b7c2;"><i class="fas fa-map-marker-alt"></i> Dasma, Cavite</p>
+            </div>
+            <div class="btn_right">
+              <p><button onclick="openModal_0(event, 'id01_2', 'Details_2', 'city_2', 'tablink_2')"class="fafafa"><i class="fas fa-info-circle" style="color: #ffffff;"></i></button></button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+<div id="modal01_web" class="w3-modal" onclick="this.style.display='none'"><!--image_on_web-->
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01_web" style="width:100%">
+  </div>
+</div>
+
+
+<div id="id01" class="w3-modal"><!--modal_0-->
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-blue"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+        <h2>Valle Verde Townhouse</h2>
+      </header>
+      <div class="w3-bar w3-border-bottom">
+        <button class="tablink w3-bar-item w3-button" onclick="openModal_0(event,'id01','Details','city','tablink')">Details</button>
+        <button class="tablink w3-bar-item w3-button" onclick="openModal_0(event,'id01','Photo','city','tablink')">Photos</button>
+        <button class="tablink w3-bar-item w3-button" onclick="openModal_0(event,'id01','Other','city','tablink')">Other Features</button>
+      </div>
+      <div id="Details" class="w3-container city">
+        <h1>House name</h1>
+        <h4>₱1,500 monthly</h4>
+        <br>
+        <p>Savor the relaxing country comfort in the midst of breezy rolling hills with beautiful sceneries of Laguna’s lake and mountains. This stand-alone subdivision at the highlands offers a self-contained residential community.</p>
+        <p>Alta Tierra is a 55-hectare masterplanned community conveniently located at Barangay A. Olaes, General Mariano Alvarez, Cavite. This subdivision boasts of its proximity and accessibility to commercial and industrial districts. Enjoy the functionality, comfort, and convenience that will fit your own lifestyle.</p>
+        <h3>Key Points</h3>
+        <ul>
+          <li>Only 10 kilometers drive from Alabang</li>
+          <li>Only 1.8 kilometers away from GMA Medicare Hospital</li>
+          <li>Only 1 km from Sunshine Fundamental Baptist Church</li>
+          <li>Only 6.5 km away from De Lasalle University Dasmariñas</li>
+          <li>Only 4.7 km away from SLEX, Southwoods exit</li>
+          <li>Very near the hospital, wet and dry market, churches and other business establishments</li>
+          <li>Very accessible to public transportation such as tricycles and jeepneys</li>
+        </ul>
+        <h3>Details</h3>
+        <ul>
+          <li>Property Type : Residential Commercial</li>
+          <li>Total Area : 55 Hectares</li>
+          <li>Available Units : 3694</li>
+          <li>Property Lot Area: 150 m2</li>
+          <li>Property Id : 18347</li>
+          <li>Year Built: 2010</li>
+          <li>Developers: Axeia</li>
+          <li>Price: Php 2,217,000</li>
+          <li>Bedrooms: 3</li>
+          <li>Bathrooms: 2</li>
+        </ul>  
+        <h3>Address</h3>    
+        <ul>
+          <li>Country: Philippines</li>
+          <li>Province: Cavite</li>
+          <li>City: Imus City</li>
+          <li>Full Address: Barangay Anabu I-C Imus City, Cavite</li>
+        </ul> 
+      </div>
+      <div id="Photo" class="w3-container city">
+        <div class="w3-row-padding w3-padding-16">
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this,'0')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this,'0')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this,'0')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this,'0')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this,'0')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this,'0')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this,'0')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this,'0')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this,'0')">
+        </div>
+      </div>
+      <div id="modal01_0" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+          <img id="img01_0" style="width:100%">
+        </div>
+      </div>
+      </div>
+
+      <div id="Other" class="w3-container city">
+        <h1>Tokyo</h1>
+        <p>idol_0</p><br>
+      </div>
+
+      <div class="w3-container w3-light-grey w3-padding">
+        <button class="w3-button w3-right w3-white w3-border" 
+        onclick="document.getElementById('id01').style.display='none'">Close</button>
+      </div>
+  </div>
+</div>
+
+<div id="id01_1" class="w3-modal"><!--modal_1-->
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-blue"> 
+        <span onclick="document.getElementById('id01_1').style.display='none'" 
+        class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+        <h2>Header_1</h2>
+      </header>
+      <div class="w3-bar w3-border-bottom">
+        <button class="tablink_1 w3-bar-item w3-button" onclick="openModal_0(event,'id01_1','Details_1','city_1','tablink_1')">Details</button>
+        <button class="tablink_1 w3-bar-item w3-button" onclick="openModal_0(event,'id01_1','Photo_1','city_1','tablink_1')">Photos</button>
+        <button class="tablink_1 w3-bar-item w3-button" onclick="openModal_0(event,'id01_1','Other_1','city_1','tablink_1')">Other Features</button>
+      </div>
+      <div id="Details_1" class="w3-container city_1">
+        <h1>London</h1>
+        <p>idol_1</p>
+      </div>
+      <div id="Photo_1" class="w3-container city_1">
+        <div class="w3-row-padding w3-padding-16">
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '1')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '1')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '1')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '1')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '1')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '1')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '1')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '1')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '1')">
+        </div>
+      </div>
+      <div id="modal01_1" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+          <img id="img01_1" style="width:100%">
+        </div>
+      </div>
+      </div>
+      <div id="Other_1" class="w3-container city_1">
+        <h1>Tokyo</h1>
+        <p>idol_1</p><br>
+      </div>
+      <div class="w3-container w3-light-grey w3-padding">
+        <button class="w3-button w3-right w3-white w3-border" 
+        onclick="document.getElementById('id01_1').style.display='none'">Close</button>
+      </div>
+  </div>
+</div>
+
+<div id="id01_2" class="w3-modal"><!--modal_2-->
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+      <header class="w3-container w3-blue"> 
+        <span onclick="document.getElementById('id01_2').style.display='none'" 
+        class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+        <h2>Header_2</h2>
+      </header>
+      <div class="w3-bar w3-border-bottom">
+        <button class="tablink_2 w3-bar-item w3-button" onclick="openModal_0(event,'id01_2','Details_2','city_2','tablink_2')">Details</button>
+        <button class="tablink_2 w3-bar-item w3-button" onclick="openModal_0(event,'id01_2','Photo_2','city_2','tablink_2')">Photos</button>
+        <button class="tablink_2 w3-bar-item w3-button" onclick="openModal_0(event,'id01_2','Other_2','city_2','tablink_2')">Other Features</button>
+      </div>
+      <div id="Details_2" class="w3-container city_2">
+        <h1>London</h1>
+        <p>idol_2</p>
+      </div>
+      <div id="Photo_2" class="w3-container city_2">
+        <div class="w3-row-padding w3-padding-16">
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/try.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '2')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/try.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '2')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/try.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '2')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/try.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '2')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/try.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '2')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/try.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '2')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/try.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '2')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/try.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '2')">
+        </div>
+        <div class="w3-container w3-third w3-padding-16">
+          <img src="image/try.jpg" style="width:100%;cursor:pointer" 
+          onclick="show_img(this, '2')">
+        </div>
+      </div>
+      <div id="modal01_2" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+          <img id="img01_2" style="width:100%">
+        </div>
+      </div>
+      </div>
+      <div id="Other_2" class="w3-container city_2">
+        <h1>Tokyo</h1>
+        <p>idol_2</p><br>
+      </div>
+      <div class="w3-container w3-light-grey w3-padding">
+        <button class="w3-button w3-right w3-white w3-border" 
+        onclick="document.getElementById('id01_2').style.display='none'">Close</button>
+      </div>
+  </div>
+</div>
+
+
+<!----------social_icons------------>
+<div class="col-md-12 net w3-center">
+    <ul class="social-network social-circle">
+         <li><a href="#" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+         <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+         <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+         <li><a href="#" class="icoGoogle" title="Gmail"><i class="fas fa-envelope"></i></a></li>
+         <li><a href="#" class="youtube" title="Youtube"><i class="fab fa-youtube"></i></a></li>  
+    </ul>       
+</div>
+<!---------------footer--------------------->
+<div class="w3-center end">
+  <p><a href="#">TERMS AND CONDITION</a> | <a href="#">PRIVACY NOTICE</a></p>
+  <h3>Copyright © 2020 BL Realty. All rights reserved.</h3>
+</div>
+<!--------back_to_top_button-------->
+<a href="#top" id="myBtn" class="btn_back_top"><i class="fas fa-chevron-up"></i></a>
+<a href="#" class="meme fa-3x"><i class="fab fa-facebook-messenger"></i></a>
+<!------------javascript------------>
+<script type="text/javascript">
+//------------------------------------------------------------------------------for search filter 
+var input = document.getElementById("myInput");//search on hit enter
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+
+    if($('a.all').hasClass('active')){//start-of-all
+      var list = ["A", "B", "C"];//list for show all
+      var inputVal = document.getElementById("myInput").value;//show text type by user
+      var inputVal_1 = document.getElementById("myInput").value;
+      inputVal = inputVal.toUpperCase();
+
+      if(list.indexOf(inputVal) !== -1){//start_1
+      document.getElementById("no_result").style.display='none';
+      document.getElementById("myUL").style.display='block';  
+
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+              li[i].style.display = "none";
+          }
+        }
+      }//end_1
+      else{
+        $('.such').text(inputVal_1);
+        $('.li_kind').text('all listing');
+        $('.d_zero').text('Place - (eg. Imus, Manila, Dasma, etc...)');
+        $('.d_one').text('Name of the house or village - (eg. Orchaed, Mesilo, Camella, etc...)');
+        $('.d_two').text('Property Type - (eg. Condo Units, House, Lot, etc...)');
+        $('.d_three').text('Developer name - (eg. Bria, Sta. Lucia, Ayala, etc...)');
+        document.getElementById("no_result").style.display='block';
+        document.getElementById("myUL").style.display='none';
+      }
+    }//end-of-all
+  
+   else if($('a.house').hasClass('active')){//start-of-house
+      var list = ["A"];
+      var inputVal = document.getElementById("myInput").value;
+      var inputVal_1 = document.getElementById("myInput").value;
+      inputVal = inputVal.toUpperCase();
+
+      if(list.indexOf(inputVal) !== -1){//start_1
+      document.getElementById("no_result").style.display='none';
+      document.getElementById("myUL").style.display='block';  
+
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+              li[i].style.display = "none";
+          }
+        }
+      }//end_1
+      else{
+        $('.such').text(inputVal_1);
+        $('.li_kind').text('house listing');
+        $('.d_zero').text('City - (eg. Imus, Manila, Dasma, etc...)');
+        $('.d_one').text('Name of the house or village - (eg. Orchaed, Mesilo, Camella, etc...)');
+        $('.d_two').text('Barangay - (eg. Bayan Luma, Anabu, Malagasang, etc...)');
+        $('.d_three').text('Developer name - (eg. Bria, Sta. Lucia, Ayala, etc...)');
+        document.getElementById("no_result").style.display='block';
+        document.getElementById("myUL").style.display='none';
+      }
+    }//end-of-house
+
+   else if($('a.condo').hasClass('active')){//start-of-condo
+      var list = ["B"];
+      var inputVal = document.getElementById("myInput").value;
+      var inputVal_1 = document.getElementById("myInput").value;
+      inputVal = inputVal.toUpperCase();
+
+      if(list.indexOf(inputVal) !== -1){//start_1
+      document.getElementById("no_result").style.display='none';
+      document.getElementById("myUL").style.display='block';  
+
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+              li[i].style.display = "none";
+          }
+        }
+      }//end_1
+      else{
+        $('.such').text(inputVal_1);
+        $('.li_kind').text('condominium listing');
+        $('.d_zero').text('Place - (eg. Imus, Manila, Dasma, etc...)');
+        $('.d_one').text('Developer name - (eg. Bria, Sta. Lucia, Ayala, etc...)');
+        $('.d_two').text('*');
+        $('.d_three').text('*');
+        document.getElementById("no_result").style.display='block';
+        document.getElementById("myUL").style.display='none';
+      }
+    }//end-of-condo
+  }//end-of-keycode
+});     
+
+function search() {//search onkey-up
+  if (document.getElementById("no_result").style.display=='block' && document.getElementById("myInput").value == ""){
+  document.getElementById("myUL").style.display='block';
+  document.getElementById("no_result").style.display='none';
+}
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      li[i].style.display = "";     
+  }
+}
+
+filterSelection("all", "Show all", 0)// filtering divs with class filterSelection
+function filterSelection(c, val, num){
+
+  var input, filter, ul, li, a, i, txtValue;//displaying all the list before filtering
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName("li");
+
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    li[i].style.display = "";
+  }
+
+  var x, i;
+  document.getElementById("myInput").value = "";
+  document.getElementById("no_result").style.display='none';
+  document.getElementById("myUL").style.display='block';
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+
+  if (num == 0){//changePlaceholder and btn filter text
+  $('.btn_filter span').text(val);
+  $('#myInput').attr('placeholder', 
+    "Search name, place, etc.. then hit 'Enter'");
+  }
+  else{
+    $('.btn_filter span').text(val);
+    $('#myInput').attr('placeholder', 
+      "All " + val + " listing"); 
+  }
+}// end-of-function
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var a_cont = document.getElementById("a_cont");//puts active class on clicked dropdown btn
+var btn_a = a_cont.getElementsByClassName("btn_a");
+for (var i = 0; i < btn_a.length; i++) {
+  btn_a[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+//-------------------------------------------------------------------------for modals
+function show_img(element, name){// for image
+  document.getElementById("img01_" + name).src = element.src;
+  document.getElementById("modal01_" + name).style.display = "block";
+}
+
+function openModal_0(evt, ids, cityName, k_city, k_tab) {// for modals
+  document.getElementById(ids).style.display='block';
+  document.getElementsByClassName(k_tab)[0].click();
+  var i, x, tablinks;
+  x = document.getElementsByClassName(k_city);
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName(k_tab);
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("w3-light-grey");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.classList.add("w3-light-grey");
+}
+//-----------------------------------------------------------------------for btn link
+$(document).ready(function(){//btn scroll smoothness
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+var mybutton = document.getElementById("myBtn");//scroll up button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>

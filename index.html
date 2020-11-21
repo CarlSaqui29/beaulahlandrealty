@@ -1,0 +1,1955 @@
+<!---------------------------
+Acknowledgement:
+
+JGoodwillieV | spinning social icons snippets from bootsnipp - https://bootsnipp.com/snippets/gm1gd
+Schwartz-Edmisten Web Design Tutorial | transparent blur header - https://schwartz-edmisten.com/
+Unplash | parallax photos -https://unsplash.com/
+Font Awesome | "Font Awesome by Dave Gandy - http://fontawesome.io".
+ADDISON LEGERE | golden text - https://addisonlegere.com/blog/gold-text-with-css-image/
+W3 school | framework - https://www.w3schools.com/
+bootstrap | framework - https://getbootstrap.com/
+
+I want to thank you all from the bottom of my heart <3
+---------------------------->
+<!---------------------------
+Web Developer Name: Carl Saqui
+Description: Beaulah Land Realty(My First Project)
+Author: Carl Saqui
+Version: 1.0
+Date Created: 07-01-2020
+Copyright © 2020 BL Realty. All rights reserved.
+---------------------------->
+<!DOCTYPE html>
+<html>
+<head>
+<title>BL Realty® | Home</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Beth Ellen' rel='stylesheet'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<!--navbar-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!--slider-->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<!--<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">-->
+<style type="text/css">
+*{
+  font-family: 'Poppins';
+}
+.navbar .navbar-brand{
+  font-size: 1.2vw;
+  padding: 1.3vw 1.5vw;
+}
+.navbar ul li a{
+  font-size: 1.1vw;
+  padding: 1.3vw 1.5vw;
+}
+body:not(.navbar) .navbar {
+  background-color: rgba(255, 255, 255 ,1)!important;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+.nav .activee{
+  background-color: none;
+  border-bottom: .5vw solid #0FEE0B;
+}
+.nav li:nth-child(2):hover,.nav li:nth-child(3):hover,.nav li:nth-child(4):hover,.nav li:nth-child(5):hover{
+  border-bottom: .5vw solid #0FEE0B;
+}
+.navbar{
+  border: none;
+  z-index: 2;	
+}
+.navbar-right img{
+  width: 12vw;
+  height: 4vw;
+}
+/*sec_1*/
+.column_1{
+  float: left;
+  width: 100%;
+}
+.parallax {
+  /*transform: translateY(-2vw);*/
+  background-image: url("image/mesilo-fff.jpg");
+  margin: 0 ;
+  min-height: 70vw; 
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(50% 17%, 100% 0, 100% 84%, 50% 100%, 0 84%, 0 0);
+  clip-path: polygon(50% 17%, 100% -1000000%, 100% 94%, 50% 100%, 0 94%, 0 -1000000%);
+}
+.center {
+  margin: 0 20vw;
+  transform: translateY(-58vw);
+  color: #0FEE0B;
+}
+.center h1{
+  font-size: 7.5vw;
+  font-weight: bolder;
+  color: #3498DB;
+}
+.center p {
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+.center a{
+  display: inline-block;
+  font-size: 1.5vw;
+  text-decoration: none;
+  padding: .5vw 1.5vw;
+  background-color: #3498DB;
+  color: #fff;
+  border-radius: 2vw;
+  margin-top: 1vw;
+}
+.center a:hover{
+  background-color: #fff;
+  color: #3498DB;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*sec_2*/
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.35);
+  margin: 8px 0px;
+}
+.hr-sect::before,
+.hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 8px;
+}
+.margin {
+  margin-top: -25vw;
+}
+.margin h2 {
+  font-size: 3vw;
+}
+.margin .hr-sect {
+  font-size: 1.3vw;
+  margin: 0 30vw;
+}
+.column {
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  margin-top: 2vw; 
+}
+.row {
+  margin: 0 5vw;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+  margin: auto;
+  width: 90%;
+}
+.card_inner {
+  position: relative;
+  z-index: 1;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  margin-top: -20px;
+}
+.card_inner:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.card .btn_right {
+  text-align: right;
+}
+.para {
+  text-align: left;
+  margin-left: 1.5vw;
+  font-size: 1.3vw;
+  line-height: 1.5vw;
+}
+.price {
+  padding-top: 1.8vw;
+}
+.grey {
+  color: #424949;
+}
+.bold {
+  font-size: 1.4vw;
+}
+.card button {
+  border-top-left-radius: 2.5vw;
+  margin-top: -60px;
+  border: none;
+  outline: 0;
+  padding: 1vw 1.3vw;
+  padding-bottom: .5vw;
+  color: white;
+  background:  linear-gradient(360deg,#33ccff,#5DADE2);
+  text-align: center;
+  cursor: pointer;
+}
+.card button:hover {
+  filter: opacity(80%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn_right .fafafa {
+  font-size: 1.5vw;
+}
+.btn_viewall a{
+  display: inline-flex;
+  font-size: 1.3vw;
+  text-decoration: none;
+  padding: .5vw 1.5vw;
+  border: .1vw solid #3498DB;
+  background-color: transparent;
+  color: #3498DB;
+  border-radius: 2vw;
+  margin-top: 3vw;
+}
+.btn_viewall a:hover{
+  background-color: #3498DB;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*sec_3*/
+.sec_5 {
+  margin-top: 5vw;
+  margin-left: 6vw;
+  margin-right: 7vw;
+  padding: 1vw 0;
+  padding-bottom: 2vw;
+  border-radius: 1vw;
+  text-align: center;
+}
+.sec_5 .hr-sect {
+  font-size: 1.3vw;
+  margin: 0 30vw;
+}
+.sec_5 .h1{
+  margin-left: 1.5vw;
+  font-size: 2.8vw;
+}
+.column_5 {
+  float: left;
+  width: 33.33%;
+  padding: 0 1.5vw;
+  text-align: center;
+}
+.column_5 h2{
+  font-size: 2.3vw;
+}
+.column_5 p{
+  font-size: 1.2vw;
+}
+.column_5 .fas {
+  font-size: 2.5vw;
+  border-radius: 100%;
+  color:  rgba(0,0,0,0.3);
+  opacity: 80%;
+}
+.column_5 .fa-id-card{
+  background-color: #fff;
+  padding: 1vw 1vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.column_5 .fa-heart{
+  background-color: #fff;
+  padding: 1vw 1.1vw;
+  color: red;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.column_5 .fa-heart:hover{
+  background-color: red;
+  color: #fff;
+  -webkit-transition: 0.1s;
+  transition: 0.3s;
+}
+.column_5 .fa-handshake{
+  background-color: #fff;
+  padding: 1vw .8vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.row_5:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*sec_4*/
+.swiper-container {
+  width: 100%;
+  height: auto;
+}
+.row_swiper {
+  margin: 2vw 5vw;
+  margin-bottom: 3vw;
+}
+.column_swiper {
+  box-sizing: border-box;  
+  float: left;
+  width: 50%;	
+  padding: 1.5vw;
+}
+.row_swiper .two{
+  padding-top: 0;
+  padding-bottom: 5vw;
+}
+.column_swiper h1{
+  margin-top: 2vw;
+  font-size: 3.5vw;
+  font-weight: bolder;
+}
+.column_swiper .p{
+  margin-top: 1vw;
+  margin-bottom: .8vw;
+  font-size: 1.5vw;
+  color: #fff;
+  background:  linear-gradient(160deg,#33ccff,#5DADE2);
+  letter-spacing: .1vw;
+  padding:.2vw .5vw;
+  transform: translateY(1.5vw);
+  display: inline-flex;
+}
+.column_swiper h6 {
+  font-size: 1.3vw;
+}
+.column_swiper .fa_fa {
+  color: #424949;
+  font-size: 1.3vw;
+}
+.column_swiper p {
+  margin-top: 1.5vw;
+  font-size: 1.2vw;
+}
+.btn_choose a{
+  margin-top: 1.2vw;
+  display: inline-flex;
+  font-size: 1.3vw;
+  text-decoration: none;
+  padding: .5vw 1.5vw;
+  border: .1vw solid #3498DB;
+  background-color: transparent;
+  color: #3498DB;
+  border-radius: 2vw;
+}
+.btn_choose a:hover{
+  background-color: #3498DB;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn_choose .q {
+  background: #3498DB;
+  color: #fff;
+  transform: translateX(.2vw);
+}
+.btn_choose .q:hover {
+  background-color: #fff;
+  color: #3498DB;
+}
+/*sec_5*/
+.item {
+  display: none;
+  position: relative;
+  .transition(.6s ease-in-out left);
+}
+.container_caro {
+  background-color: none;
+}
+.column_review {
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+  padding: 1vw 5vw;
+}
+.row_review:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.sec_7 .hr-sect {
+  font-size: 1.3vw;
+  margin: 0 30vw;
+}
+.container_review {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0vw 2vw;
+  padding-top: 1.5vw;
+}
+.container_review::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container_review img {
+  width: 7vw;
+  height: 6.5vw;
+  border-radius: 50%;
+  text-align: center;
+}
+.container_review span {
+  font-size: 1.4vw;
+  margin-right: 1vw;
+  color: #00b7c2;
+}
+.container_review .s{
+  font-weight: bold;
+}
+.container_review p{
+  font-size: 1.2vw;
+}
+.container_review .fa-star{
+  color: #F4D03F;
+}
+.container_caro .bl{
+  display: inline-flex;
+  font-size: 1.5vw;
+  margin-left: 8vw;
+  margin-top: .7vw;
+  margin-bottom: 2.5vw;
+}
+.container_caro .controls {
+  float: right;
+  font-size: 1.5vw;
+  margin-right: 8vw;
+  margin-top: 1vw;
+  margin-bottom: 2.5vw;
+}
+.controls .lefty{
+  padding: .8vw 1.2vw;
+  background-color: #F2F3F4;
+  border-radius: 50%;
+  color: #3498DB;
+}
+.controls .righty{
+  padding: .8vw 1.2vw;
+  background-color: #F2F3F4;
+  border-radius: 50%;
+  color: #3498DB;
+}
+.controls .lefty:hover{
+  background-color: #3498DB;
+  color: #F2F3F4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.controls .righty:hover{
+  background-color: #3498DB;
+  color: #F2F3F4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*sec_6*/
+.row_new{
+  position: relative;
+  z-index: 1;
+}
+.row_new:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column_new{
+  float: left;
+  width: 100%;
+}
+.parallax_new {
+  background-image: url("image/mesilo-fff.jpg");
+  margin: 0 ;
+  min-height: 70vw; 
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(50% 17%, 100% 0, 100% 84%, 50% 100%, 0 84%, 0 0);
+  clip-path: polygon(50% 17%, 100% -1000000%, 100% 94%, 50% 100%, 0 94%, 0 -1000000%);
+}
+.center_new {
+  margin: 0 20vw;
+  padding-top: 20vw;
+  position: absolute;
+  color: #3498DB;
+}
+.center_new h1{
+  font-size: 7vw;
+  font-weight: bold;
+}
+.center_new a{
+  display: inline-block;
+  font-size: 2.5vw;
+  text-decoration: none;
+  padding: 1vw 2vw;
+  background-color: #3498DB;
+  color: #fff;
+  border-radius: 50%;
+  margin-top: 1vw;
+}
+.center_new a:hover{
+  background-color: #fff;
+  color: #3498DB;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*sec_7*/
+.sec_8 .hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(253, 254, 254);
+  margin: 8px 0px;
+}
+.sec_8 .hr-sect::before,
+.sec_8 .hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(253, 254, 254);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 8px;
+}
+.column_about {
+  position: relative;
+  background: #3498DB;
+  z-index: 0;
+  margin-top: -140px;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-align: center;
+  -webkit-clip-path: polygon(50% 17%, 100% 0, 100% 84%, 50% 100%, 0 84%, 0 0);
+  clip-path: polygon(50% 17%, 100% -1000000%, 100% 94%, 50% 100%, 0 94%, 0 -1000000%);
+}
+.column_about img {
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+  width: 11vw;
+  height: 10vw;
+  border-radius: 50%;
+}
+.column_about h1{
+  font-size: 3vw;
+  margin-top: -.3vw;
+  font-weight: bold;
+  color: #ffffff; 
+}
+.ceo h3{
+  font-size: 2vw;
+}
+.column_about p{
+  font-size: 1.4vw;
+}
+.column_about .qoute{
+  font-size: 1.4vw;
+}
+.row_about:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left_about{
+  width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 200px; 
+  padding-bottom: 5vw;
+}
+.row_about a{
+  font-size: 1.3vw;
+  border-radius: 5vw;
+  text-decoration: none;
+  padding: .5vw 1vw;
+  background-color: #3498DB;
+  color: #fff;
+}
+.row_about a:hover{
+  background-color: #fff;
+  color: #3498DB;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.net {
+  margin-top: 2vw;
+}
+.net ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left:0 !important;
+  padding: 0;
+}
+.net ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+/* footer social icons */
+.social-network a.instagram:hover {
+  background-color:#3498DB;
+/*background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);*/
+}
+.social-network a.icoFacebook:hover {
+  background-color:#3498DB;/*3B5998*/;
+}
+.social-network a.icoTwitter:hover {
+  background-color:#3498DB;/*33ccff*/;
+}
+.social-network a.icoGoogle:hover {
+  background-color:#3498DB;/*BD3518*/;
+}
+.social-network a.youtube:hover {
+  background-color:#3498DB;/*FF0000*/;
+}
+.social-network a.instagram:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.youtube:hover i {
+  color:#fff;
+}
+.social-network a.socialIcon:hover, .socialHoverClass {
+  color:#44BCDD;
+}
+.social-circle li a {
+  display:inline-block;
+  position:relative;
+  margin:0 auto 0 auto;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  text-align:center;
+  width: 4vw;
+  height: 4vw;
+  font-size: 1.5vw;
+}
+.social-circle li i {
+  margin:0;
+  line-height:5vw;
+  text-align: center;
+}
+.social-circle li a:hover i, .triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.social-circle i {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.social-network a {
+  background-color: #3498DB;   
+}
+.sec_8 .hr-sect {
+  font-size: 1.3vw;
+  margin: 0 30vw;
+}
+/*sec_8*/
+.column_blog {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 1vw;
+}
+.row_blog {
+  padding: 0 5vw;
+}
+.middle_blog{
+  transform: translateY(-11vw);
+}
+.card_blog img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card_blog h1{
+  margin-top: -3.5vw;
+  font-size: 1.6vw;
+  text-align: left;
+  font-weight: bold;
+  padding: 0 1vw;
+}
+.card_blog p{
+  text-align: left;
+  font-size: 1.2vw;
+  padding: 0 1vw;
+  margin-top: -.2vw;
+}
+.card_blog a{
+  top: 50%;
+  color: #ffffff;
+  font-size: 3vw;
+  padding: .8vw 1.7vw;
+  background: linear-gradient(360deg,#33ccff,#5DADE2);
+  border-radius: 50%;  
+  box-shadow: 0px 0px 0px 8px rgba(253,254,254,0.3); 
+  cursor: pointer;
+}
+.card_blog a:hover{
+  opacity: 80%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.card_blog .fa-calendar{
+  color: #33ccff;
+}
+.all_blogs{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,.9);
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+}
+.all_blogs video{
+  max-width: 900px;
+  outline: none;
+  position: relative;
+}
+.all_cbtn{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #fff;
+  font-size: 42px;
+  cursor: pointer;
+}
+.sec_10 .hr-sect {
+  font-size: 1.3vw;
+  margin: 0 30vw;
+  margin-bottom: 2vw;
+}
+/*sec_9*/
+.end{
+  padding: .5vw .5vw;
+  background-color: #3498DB;
+  margin-top: 2vw;
+}
+.end a{
+  text-decoration: none;
+  font-size: 1vw;
+  color: #ffffff;
+}
+.end a:hover{
+  border-bottom: .1vw solid #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.end p{
+  padding: .5vw 0;
+  color: #ffffff;
+  font-size: 1vw;
+}
+.end h3{
+  margin-top: -.5vw;
+  font-size: 1.3vw;
+  color: #ffffff;
+}
+/*btn_back*/
+.btn_back_top {
+  display: none;
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  z-index: 2;
+  font-size: 1vw;
+  border: none;
+  box-shadow: 0px 0px 0px 8px rgba(253,254,254,0.3);  
+  outline: none;
+  background: linear-gradient(360deg,#33ccff,#5DADE2);
+  color: #fff;
+  cursor: pointer;
+  padding: 1vw 1.3vw;
+  border-radius: .5vw;
+}
+.btn_back_top:hover {
+  filter: opacity(80%);
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.meme {
+  position: fixed;
+  bottom: 2vw;
+  left: 2vw;
+  z-index: 2;
+  font-size: 4vw;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 0px 8px rgba(253,254,254,0.3); 
+  background: #006AFF;
+  color: #fff;
+  cursor: pointer;
+  padding: .3vw 1.2vw;
+  border-radius: 50%;
+}
+.meme:hover{
+  filter: opacity(80%);
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (max-width: 1080px){
+  .center p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1050px){
+  .end{
+    padding: 10px .5vw;
+  }
+}
+@media (max-width: 1010px){
+  .column_swiper {
+	width: 100%;
+  }
+  .column_swiper h1{
+	font-size: 34px;
+  }
+  .column_swiper .p{
+	font-size: 18px;
+  }
+  .column_swiper h6 {
+	font-size: 16px;
+  }
+  .column_swiper .fa_fa {
+	font-size: 16px;
+  }
+  .column_swiper p {
+	font-size: 15px;
+  }
+  .btn_choose a{
+	font-size: 15px;
+	padding: 5px 15px;
+	border-radius: 5vw;
+  }
+}
+@media (max-width: 1000px){
+  .nav .activee{
+    background-color: none;
+    border-bottom: 5px solid #0FEE0B;
+  }
+  .nav li:nth-child(2):hover,.nav li:nth-child(3):hover,.nav li:nth-child(4):hover,.nav li:nth-child(5):hover{
+    border-bottom: 5px solid #0FEE0B;
+  }
+  .navbar .navbar-brand{
+    font-size: 15px;
+    padding: 15px 15px;
+  }
+  .navbar ul li a{
+    font-size: 14px;
+    padding: 15px 15px;
+  }
+  .navbar-right img{
+    width: 165px;
+    height: 55px;
+  }
+  .center h1{
+    font-size: 60px;
+  }
+  .center p {
+    font-size: 18px;
+  }
+  .center a{
+  	font-size: 15px;
+  	padding: 5px 15px;
+  	border-radius: 5vw;
+  	margin-top: 10px;
+  }
+  .margin .hr-sect {
+  	font-size: 18px;
+  	margin: 0;
+  }
+  .margin h2 {
+	  font-size: 40px;
+  }
+  .para {
+  	margin-left: 1.5vw;
+  	font-size: 15px;
+  	line-height: 15px;
+  }
+  .price {
+	padding-top: 18px;
+  }
+  .bold {
+	font-size: 15px;
+  }
+  .card button {
+    border-top-left-radius: 30px;
+    padding: 8px 17px;
+    font-size: 18px;
+  }
+  .btn_right .fafafa {
+    font-size: 20px;
+  }
+  .btn_viewall a{
+	font-size: 16px;
+	padding: 4px 12px;
+	border-radius: 5vw;
+	margin-top: 5vw;
+  }
+  .sec_5 .hr-sect {
+	font-size: 18px;
+	margin: 0;
+  }
+  .sec_5 .h1{
+	font-size: 30px;
+  }
+  .column_5 h2{
+	font-size: 25px;
+  }
+  .column_5 p{
+	font-size: 13px;
+  }
+  .column_5 .fas {
+	font-size: 27px;
+  }
+  .column_5 .fa-id-card{
+	padding: 10px 10px;
+  }
+  .column_5 .fa-heart{
+	padding: 10px 11px;
+  }
+  .column_5 .fa-handshake{
+	padding: 10px 8px;
+  }
+  .sec_7	 .hr-sect {
+	font-size: 18px;
+	margin: 0;
+  }
+  .container_review {
+	padding-top: 18px;
+  }
+  .container_review img {
+	width: 75px;
+	height: 70px;
+  }
+  .container_review span {
+	font-size: 16px;
+  }
+  .container_review p{
+	font-size: 14px;
+  }
+  .container_caro .bl{
+	font-size: 16px;
+	margin-left: 80px;
+	margin-top: 7px;
+	margin-bottom: 25px;
+  }
+  .container_caro .controls {
+	font-size: 16px;
+	margin-right: 80px;
+	margin-top: 10px;
+	margin-bottom: 25px;
+  }
+  .controls .lefty{
+	padding: 10px 14px;
+  }
+  .controls .righty{
+	padding: 10px 14px;
+  }
+  .center_new h1{
+	font-size: 60px;
+  }
+  .center_new a{
+	font-size: 25px;
+	padding: 15px 25px;
+	margin-top: 10px;
+  }
+  .column_about img {
+	width: 110px;
+	height: 100px;
+  }
+  .column_about .qoute{
+	font-size: 17px;
+  }
+  .left_about{
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 200px; 
+	padding-bottom: 50px;
+  }
+  .column_about h1{
+	font-size: 32px;
+  }
+  .column_about p{
+	font-size: 16px;
+  }
+  .ceo h3{
+    font-size: 20px;
+  }
+  .row_about a{
+	margin-top: 20px;
+	font-size: 13px;
+	padding: 5px 10px;
+  }
+  .social-circle li a {
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+  }
+  .social-circle li i {
+	line-height: 50px;
+  }
+  .net {
+	margin-top: 20px;
+  }
+  .sec_8	 .hr-sect {
+	font-size: 18px;
+	margin: 0;
+  }
+  .sec_10	 .hr-sect {
+	font-size: 18px;
+	margin: 0;
+  }
+  .card_blog h1{
+	margin-top: -35px;
+	font-size: 18px;
+	padding: 0 1vw;
+  }
+  .card_blog p{
+	text-align: left;
+	font-size: 14px;
+	padding: 0 1vw;
+	margin-top: -.2vw;
+  }
+  .card_blog a{
+	font-size: 30px;
+	padding: 8px 17px;
+  }
+  .end a{
+	font-size: 12px;
+  }
+  .end p{
+	font-size: 12px;
+  }
+  .end h3{
+	font-size: 15px;
+  }
+  .btn_back_top {
+	bottom: 20px;
+	right: 20px;
+	font-size: 20px;
+	padding: 10px 15px;
+  }
+  .meme {
+    bottom: 20px;
+    left: 20px;
+    font-size: 40px;
+    padding: 3px 12px;
+  }
+}
+@media (max-width: 901px){
+  .blog_1 video{
+	max-width: 90%;
+  }
+  .blog_2 video{
+	max-width: 90%;
+  }
+  .blog_3 video{
+	max-width: 90%;
+  }
+}
+@media (max-width: 835px){
+  .column {
+	width: 100%;
+	height: 100%;
+  }
+  .para {
+	margin-left: 4vw;
+  }
+}
+@media (max-width: 800px){
+  .sec_5 {
+	text-align: center;
+  }
+  .column_5 {
+	width: 100%;
+	text-align: center;
+  }
+  .column_5 p{
+	font-size: 16px;
+  }
+  .column_blog {
+	width: 100%;
+	display: block;
+  }
+  .middle_blog{
+	transform: translateY(-30vw);
+  }
+}
+@media (max-width: 767px){
+  .navbar-right img{
+    margin-left: -15px;
+  }
+}
+@media (max-width: 750px){
+  .margin {
+	margin-top: -80vw;
+  }
+}
+@media (max-width: 700px){
+  .left_about{
+	width: 100%;
+  }
+}
+@media (max-width: 680px){
+  .center{
+    margin: 0;
+  }
+  .center_new{
+	margin: 0;
+  }
+}
+@media (max-width: 600px){
+  .swiper-button-prev, .swiper-button-next{
+	display: none;
+  }
+  .row_swiper .two{
+	padding-bottom: 50px;
+  }
+  .container_caro .bl{
+	display: block;
+	text-align: center;
+	margin-left: 0px;
+	margin-bottom: 5px;
+  }
+  .container_caro .controls {
+	transform: translateX(-43vw);
+	margin-right: 0px;
+  }
+  .row_blog {
+	padding: 0 2vw;
+  }
+}
+@media (max-width: 650px){
+  .parallax {
+    min-height: 80vw;
+  }
+}
+@media (max-width: 635px){
+  .parallax {
+    min-height: 90vw;
+  }
+} 
+@media (max-width: 550px){
+  .column_about{
+	text-align: center;
+  }
+}
+@media (max-width: 549px){
+  .center {
+    transform: translateY(-110vw);
+  }
+  .parallax {
+    min-height: 140vw;
+  }
+  .center h1{
+    font-size: 70px;
+  }
+  .center p {
+    font-size: 25px;
+  }
+  .center a{
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 25px;
+  }
+  .margin {
+	margin-top: -60vw;
+  }
+  .parallax_new {
+	min-height: 140vw;
+  }
+  .center_new h1{
+	font-size: 50px;
+  }
+  .center_new a{
+	font-size: 25px;
+	padding: 15px 25px;
+  }
+}
+@media (max-width: 500px){
+  .container_caro .controls {
+	transform: translateX(-42vw);
+  }
+}
+@media (max-width: 460px){
+  .container_caro .controls {
+	transform: translateX(-40vw);
+  }
+}
+@media (max-width: 458px){
+  .center {
+    transform: translateY(0vw);
+  }
+  .center h1{
+    transform: translateY(-100vw);
+  }
+  .center p {
+    margin-top: -45vw;
+  }
+  .margin {
+	margin-top: 0vw;
+  }
+}
+@media (max-width: 421px){
+  .social-circle li a {
+	width: 45px;
+	height: 45px;
+	font-size: 17px;
+  }
+  .left_about{
+	padding-left: 20px;
+	padding-right: 20px;
+  }
+}
+@media (max-width: 410px){
+  .center h1{
+    transform: translateY(-110vw);
+  }
+  .center p {
+    margin-top: -55vw;
+  }
+}
+@media (max-width: 400px){
+  .container_caro .controls {
+	transform: translateX(-40vw);
+  }
+}
+@media (max-width: 389px){
+  .column_swiper .fa-tag{
+	display: none;
+  }
+}
+@media (max-width: 373px){
+  .center h1{
+    transform: translateY(-120vw);
+  }
+  .center p {
+    margin-top: -100vw;
+  }
+}
+@media (max-width: 370px){
+  .container_caro .controls {
+	transform: translateX(-38vw);
+  }
+}
+@media (max-width: 345px){
+  .column_swiper .fa-tag{
+	display: inline-block;
+  }
+}
+</style>
+</head>
+<body>
+<!---------------navbar--------------->
+<nav class="navbar navbar-default  navbar-fixed-top">
+	<div class="container-fluid " >
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+			<a class="navbar-brand " href="#top" style="color: #424949;">Beaulah Land Realty®</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li class="activee"><a href="#" style="color: #424949;" >Home</a></li>
+				<li><a href="listing.html">Property Listing</a></li>
+				<li><a href="blog.html">Blogs</a></li>
+				<li><a href="#about">About Us</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right icon">
+				<!--something to right-->
+        <img src="image/logss.png">
+			</ul>
+		</div>
+	</div>
+</nav>
+<!----------------sec_1------------------->
+<div class="row_1">
+	<div class="column_1 parallax"></div>
+	<div class="center w3-center">
+		<h1  id="top">Turn Dreams to Address</h1>
+		<p>Beaulah Land Realty®</p>
+		<a href="#">Inquire now</a>
+	</div>
+</div>
+<!---------------sec_2-------------------->
+<div class="margin">
+	<div class="hr-sect w3-padding" style="font-family: 'Poppins', Montserrat;">FEATURED LISTING</div>
+	<h2 class="w3-center" style="font-family: 'Poppins', Montserrat;">A Brighter Home Just For You</h2>
+</div>
+<div class="row">
+	<div class="column"><!--card_0-->
+		<div class="card">
+			<img src="image/house_2.jpg" style="width:100%;cursor:pointer" onclick="show_img(this, 'web')">
+			<div class="card_inner">
+				<div class="para">
+	    			<p class="price">₱1,500/mo.</p>
+					<p class="grey"><i class="fas fa-bed"></i> 1&nbsp;&nbsp; <i class="fas fa-toilet"></i> 1&nbsp;&nbsp; <i class="fas fa-chart-area"></i> 1,500 sqft</p>
+					<p class="bold">The Villa Verde</p>
+					<p style="color: #00b7c2;"><i class="fas fa-map-marker-alt"></i> Naic, Cavite</p>
+	    		</div>
+		    	<div class="btn_right">
+		    		<p><button onclick="openModal_0(event, 'id01', 'Details', 'city', 'tablink')"  class="fafafa"><i class="fas fa-info-circle" style=" color: #ffffff;"></i></button></button></p>
+		    	</div>
+			</div>
+		</div>
+	</div>
+	<div class="column"><!--card_1-->
+		<div class="card">
+			<img src="image/house_2.jpg" style="width:100%;cursor:pointer" onclick="show_img(this, 'web')">
+			<div class="card_inner">
+				<div class="para">
+	    			<p class="price">₱1,500/mo.</p>
+					<p class="grey"><i class="fas fa-bed"></i> 2&nbsp;&nbsp; <i class="fas fa-toilet"></i> 1&nbsp;&nbsp; <i class="fas fa-chart-area"></i> 2,000 sqft</p>
+					<p class="bold">The Village</p>
+					<p style="color: #00b7c2;"><i class="fas fa-map-marker-alt"></i> Imus, Cavite</p>
+	    		</div>
+		    	<div class="btn_right">
+		    		<p><button onclick="openModal_0(event, 'id01_1', 'Details_1', 'city_1', 'tablink_1')" class="fafafa"><i class="fas fa-info-circle" style=" color: #ffffff;"></i></button></button></p>
+		    	</div>
+			</div>	
+		</div>
+	</div>
+	<div class="column"><!--card_2-->
+		<div class="card">
+			<img src="image/house_2.jpg" style="width:100%;cursor:pointer" onclick="show_img(this, 'web')">
+			<div class="card_inner">
+				<div class="para">
+	    			<p class="price">₱1,600/mo.</p>
+					<p class="grey"><i class="fas fa-bed"></i> 1&nbsp;&nbsp; <i class="fas fa-toilet"></i> 1&nbsp;&nbsp; <i class="fas fa-chart-area"></i> 1,800 sqft</p>
+					<p class="bold">The Golden City</p>
+					<p style="color: #00b7c2;"><i class="fas fa-map-marker-alt"></i> Dasma, Cavite</p>
+	    		</div>
+		    	<div class="btn_right">
+		    		<p><button onclick="openModal_0(event, 'id01_2', 'Details_2', 'city_2', 'tablink_2')"class="fafafa"><i class="fas fa-info-circle" style=" color: #ffffff;"></i></button></button></p>
+		    	</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="modal01_web" class="w3-modal" onclick="this.style.display='none'"><!--image_on_web-->
+	<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+	<div class="w3-modal-content w3-animate-zoom">
+		<img id="img01_web" style="width:100%">
+	</div>
+</div>
+
+<div id="id01" class="w3-modal"><!--modal_0-->
+ 	<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+  		<header class="w3-container w3-blue"> 
+   			<span onclick="document.getElementById('id01').style.display='none'" 
+   			class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+   			<h2>Valle Verde Townhouse</h2>
+  		</header>
+	    <div class="w3-bar w3-border-bottom">
+	   		<button class="tablink w3-bar-item w3-button" onclick="openModal_0(event,'id01','Details','city','tablink')">Details</button>
+	   		<button class="tablink w3-bar-item w3-button" onclick="openModal_0(event,'id01','Photo','city','tablink')">Photos</button>
+	   		<button class="tablink w3-bar-item w3-button" onclick="openModal_0(event,'id01','Other','city','tablink')">Other Features</button>
+	    </div>
+	  	<div id="Details" class="w3-container city">
+	   		<h1>House name</h1>
+	   		<h4>₱1,500 monthly</h4>
+	   		<br>
+	   		<p>Savor the relaxing country comfort in the midst of breezy rolling hills with beautiful sceneries of Laguna’s lake and mountains. This stand-alone subdivision at the highlands offers a self-contained residential community.</p>
+	   		<p>Alta Tierra is a 55-hectare masterplanned community conveniently located at Barangay A. Olaes, General Mariano Alvarez, Cavite. This subdivision boasts of its proximity and accessibility to commercial and industrial districts. Enjoy the functionality, comfort, and convenience that will fit your own lifestyle.</p>
+	   		<h3>Key Points</h3>
+	   		<ul>
+	   			<li>Only 10 kilometers drive from Alabang</li>
+		   		<li>Only 1.8 kilometers away from GMA Medicare Hospital</li>
+		   		<li>Only 1 km from Sunshine Fundamental Baptist Church</li>
+		   		<li>Only 6.5 km away from De Lasalle University Dasmariñas</li>
+		   		<li>Only 4.7 km away from SLEX, Southwoods exit</li>
+		   		<li>Very near the hospital, wet and dry market, churches and other business establishments</li>
+		   		<li>Very accessible to public transportation such as tricycles and jeepneys</li>
+	   		</ul>
+	   		<h3>Details</h3>
+	   		<ul>
+	   			<li>Property Type : Residential Commercial</li>
+		   		<li>Total Area : 55 Hectares</li>
+		   		<li>Available Units : 3694</li>
+		   		<li>Property Lot Area: 150 m2</li>
+		   		<li>Property Id : 18347</li>
+		   		<li>Year Built: 2010</li>
+		   		<li>Developers: Axeia</li>
+		   		<li>Price: Php 2,217,000</li>
+		   		<li>Bedrooms: 3</li>
+		   		<li>Bathrooms: 2</li>
+	   		</ul>	 
+	   		<h3>Address</h3>  	
+	   		<ul>
+	   			<li>Country: Philippines</li>
+	   			<li>Province: Cavite</li>
+		   		<li>City: Imus City</li>
+		   		<li>Full Address: Barangay Anabu I-C Imus City, Cavite</li>
+	   		</ul>	
+	  	</div>
+	  	<div id="Photo" class="w3-container city">
+	   		<div class="w3-row-padding w3-padding-16">
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this,'0')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this,'0')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this,'0')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this,'0')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this,'0')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this,'0')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this,'0')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this,'0')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_1.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this,'0')">
+				</div>
+			</div>
+			<div id="modal01_0" class="w3-modal" onclick="this.style.display='none'">
+				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+				<div class="w3-modal-content w3-animate-zoom">
+					<img id="img01_0" style="width:100%">
+				</div>
+			</div>
+	  	</div>
+
+	  	<div id="Other" class="w3-container city">
+	   		<h1>Tokyo</h1>
+	   		<p>idol_0</p><br>
+	  	</div>
+
+	  	<div class="w3-container w3-light-grey w3-padding">
+	   		<button class="w3-button w3-right w3-white w3-border" 
+	   		onclick="document.getElementById('id01').style.display='none'">Close</button>
+	  	</div>
+ 	</div>
+</div>
+
+<div id="id01_1" class="w3-modal"><!--modal_1-->
+ 	<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+  		<header class="w3-container w3-blue"> 
+   			<span onclick="document.getElementById('id01_1').style.display='none'" 
+   			class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+   			<h2>Header_1</h2>
+  		</header>
+	    <div class="w3-bar w3-border-bottom">
+	   		<button class="tablink_1 w3-bar-item w3-button" onclick="openModal_0(event,'id01_1','Details_1','city_1','tablink_1')">Details</button>
+	   		<button class="tablink_1 w3-bar-item w3-button" onclick="openModal_0(event,'id01_1','Photo_1','city_1','tablink_1')">Photos</button>
+	   		<button class="tablink_1 w3-bar-item w3-button" onclick="openModal_0(event,'id01_1','Other_1','city_1','tablink_1')">Other Features</button>
+	    </div>
+	  	<div id="Details_1" class="w3-container city_1">
+	   		<h1>London</h1>
+	   		<p>idol_1</p>
+	  	</div>
+	  	<div id="Photo_1" class="w3-container city_1">
+	   		<div class="w3-row-padding w3-padding-16">
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '1')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '1')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '1')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '1')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '1')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '1')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '1')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '1')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/house_2.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '1')">
+				</div>
+			</div>
+			<div id="modal01_1" class="w3-modal" onclick="this.style.display='none'">
+				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+				<div class="w3-modal-content w3-animate-zoom">
+					<img id="img01_1" style="width:100%">
+				</div>
+			</div>
+	  	</div>
+	  	<div id="Other_1" class="w3-container city_1">
+	   		<h1>Tokyo</h1>
+	   		<p>idol_1</p><br>
+	  	</div>
+	  	<div class="w3-container w3-light-grey w3-padding">
+	   		<button class="w3-button w3-right w3-white w3-border" 
+	   		onclick="document.getElementById('id01_1').style.display='none'">Close</button>
+	  	</div>
+ 	</div>
+</div>
+
+<div id="id01_2" class="w3-modal"><!--modal_2-->
+ 	<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+  		<header class="w3-container w3-blue"> 
+   			<span onclick="document.getElementById('id01_2').style.display='none'" 
+   			class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+   			<h2>Header_2</h2>
+  		</header>
+	    <div class="w3-bar w3-border-bottom">
+	   		<button class="tablink_2 w3-bar-item w3-button" onclick="openModal_0(event,'id01_2','Details_2','city_2','tablink_2')">Details</button>
+	   		<button class="tablink_2 w3-bar-item w3-button" onclick="openModal_0(event,'id01_2','Photo_2','city_2','tablink_2')">Photos</button>
+	   		<button class="tablink_2 w3-bar-item w3-button" onclick="openModal_0(event,'id01_2','Other_2','city_2','tablink_2')">Other Features</button>
+	    </div>
+	  	<div id="Details_2" class="w3-container city_2">
+	   		<h1>London</h1>
+	   		<p>idol_2</p>
+	  	</div>
+	  	<div id="Photo_2" class="w3-container city_2">
+	   		<div class="w3-row-padding w3-padding-16">
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/try.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '2')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/try.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '2')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/try.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '2')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/try.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '2')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/try.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '2')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/try.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '2')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/try.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '2')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/try.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '2')">
+				</div>
+				<div class="w3-container w3-third w3-padding-16">
+					<img src="image/try.jpg" style="width:100%;cursor:pointer" 
+					onclick="show_img(this, '2')">
+				</div>
+			</div>
+			<div id="modal01_2" class="w3-modal" onclick="this.style.display='none'">
+				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+				<div class="w3-modal-content w3-animate-zoom">
+					<img id="img01_2" style="width:100%">
+				</div>
+			</div>
+	  	</div>
+	  	<div id="Other_2" class="w3-container city_2">
+	   		<h1>Tokyo</h1>
+	   		<p>idol_2</p><br>
+	  	</div>
+	  	<div class="w3-container w3-light-grey w3-padding">
+	   		<button class="w3-button w3-right w3-white w3-border" 
+	   		onclick="document.getElementById('id01_2').style.display='none'">Close</button>
+	  	</div>
+ 	</div>
+</div>
+<!---------------sec_3--------------------->
+<div class="btn_viewall w3-center"><a href="listing.html">View all listing ></a></div>
+<div class="sec_5">
+	<div class="hr-sect w3-padding" style="font-family: 'Poppins', Montserrat;">WHYs</div>
+	<h1 class="h1">Why Choose Us?</h1>
+	<div class="row_5">
+		<div class="column_5">
+			<h1><i class="fas fa-id-card"></i></h1>
+			<h2>License Brokers</h2>
+			<p>We are not just an ordinary real estate agents we are professional license brokers well trained to meet all of your expectation and to give you the highest standard of service.</p>
+		</div>
+		<div class="column_5">
+			<h1><i class="fas fa-heart"></i></h1>
+			<h2>Care for Clients</h2>
+			<p>Our skills and knowledge is not the primary reason why we got the increase of sales, but because of the care and love that we give for our dear clients.</p>
+		</div>
+		<div class="column_5">
+			<h1><i class="fas fa-handshake"></i></h1>
+			<h2>100% Trusted</h2>
+			<p>Trust is the very important factor in sales industry, you can assure 100% that we are a trustworthy agents being transparent in all the details and issues.</p>
+		</div>
+	</div>
+</div> 
+<!---------------sec_4--------------------->
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+	<!-- Slides -->
+		<div class="swiper-slide"><!--slide_1-->
+			<div class="row_swiper">
+				<div class="column_swiper one">
+					<img src="image/house_1.jpg" style="width: 100%;cursor:pointer;" 
+    				onclick="show_img(this, 'slider')">
+				</div>
+				<div class="column_swiper two">
+					<p class="p">₱1,500/mo.</p>
+					<h1>The Orchard Molo <i class="fas fa-tag"></i></h1>
+					<h6 style="color: #00b7c2;"><i class="fas fa-map-marker-alt"></i> Salitran II Dasma, Cavite</h6>
+					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts</p>
+					<p class="fa_fa"><i class="fas fa-bed"></i> 2&nbsp;&nbsp; <i class="fas fa-toilet"></i> 1&nbsp;&nbsp; <i class="fas fa-chart-area"></i> 2,000 sqft</p>
+					<div class="btn_choose w3-center">
+						<a href="#">Inquire now</a>
+						<a href="listing.html" class="q">See more ></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-slide"><!--slide_2-->
+			<div class="row_swiper">
+				<div class="column_swiper one">
+					<img src="image/house_2.jpg" style="width: 100%;cursor:pointer" 
+    				onclick="show_img(this, 'slider')">
+				</div>
+				<div class="column_swiper two">
+					<p class="p">₱1,500/mo.</p>
+					<h1>The Orchard Molo <i class="fas fa-tag"></i></h1>
+					<h6 style="color: #00b7c2;"><i class="fas fa-map-marker-alt"></i> Salitran II Dasma, Cavite</h6>
+					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts</p>
+					<p class="fa_fa"><i class="fas fa-bed"></i> 2&nbsp;&nbsp; <i class="fas fa-toilet"></i> 1&nbsp;&nbsp; <i class="fas fa-chart-area"></i> 2,000 sqft</p>
+					<div class="btn_choose w3-center">
+						<a href="#">Inquire now</a>
+						<a href="listing.html" class="q">See more ></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-slide"><!--slide_3-->
+			<div class="row_swiper">
+				<div class="column_swiper one">
+					<img src="image/house_2.jpg" style="width: 100%;cursor:pointer" 
+    				onclick="show_img(this, 'slider')">
+				</div>
+				<div class="column_swiper two">
+					<p class="p">₱1,500/mo.</p>
+					<h1>The Orchard Molo <i class="fas fa-tag"></i></h1>
+					<h6 style="color: #00b7c2;"><i class="fas fa-map-marker-alt"></i> Salitran II Dasma, Cavite</h6>
+					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts</p>
+					<p class="fa_fa"><i class="fas fa-bed"></i> 2&nbsp;&nbsp; <i class="fas fa-toilet"></i> 1&nbsp;&nbsp; <i class="fas fa-chart-area"></i> 2,000 sqft</p>
+					<div class="btn_choose w3-center">
+						<a href="#">Inquire now</a>
+						<a href="listing.html" class="q">See more ></a>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+<div class="swiper-pagination"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+<div id="modal01_slider" class="w3-modal" onclick="this.style.display='none'"><!--image_on_web-->
+	<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+	<div class="w3-modal-content w3-animate-zoom">
+		<img id="img01_slider" style="width:100%; z-index: 9999;">
+	</div>
+</div>
+<!---------------sec_5--------------------->
+<div class="container_caro">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  	<div class="sec_7"><div class="hr-sect w3-padding" style="font-family: 'Poppins', Montserrat;">FEEDBACKs</div></div>
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="row_review">
+          <div class="column_review">
+            <div class="container_review">
+              <img src="image/ceo2.png">
+              <p class="s"><span class="s">Chris Fox,</span> CEO at Mighty Schools.</p>
+              <p>John Doe saved us from a web disaster.  John Doe saved us from a web disaster.John Doe saved us from a web disaster. John Doe saved us from a web disaster.John Doe saved us from a web disaster.</p>
+              <p>Review rate - <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+       <div class="row_review">
+          <div class="column_review">
+            <div class="container_review">
+              <img src="image/ceo3.png">
+              <p class="s"><span class="s">Chris carl,</span> CEO at Mighty Schools.</p>
+              <p>John Doe saved us from a web disaster.  John Doe saved us from a web disaster.John Doe saved us from a web disaster. John Doe saved us from a web disaster.John Doe saved us from a web disaster.</p>
+              <p>Review rate - <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="row_review">
+          <div class="column_review">
+            <div class="container_review">
+              <img src="image/ceo4.png">
+              <p class="s"><span class="s">Chris ros,</span> CEO at Mighty Schools.</p>
+              <p>John Doe saved us from a web disaster.  John Doe saved us from a web disaster.John Doe saved us from a web disaster. John Doe saved us from a web disaster.</p>
+              <p>Review rate - <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="bl">Beaulah Land Realty® |&nbsp;<span style="font-family: 'Beth Ellen';">Review's</span></h1>
+    <div class="controls">
+      <a class="lefty" href="#myCarousel" data-slide="prev"><i class="fas fa-arrow-left"></i></a>
+      <a class="righty" href="#myCarousel" data-slide="next"><i class="fas fa-arrow-right"></i></a>
+    </div>
+    </div>
+  </div>
+</div>
+<!---------------sec_6--------------------->
+<div class="row_new">
+	<div class="column_new parallax_new"></div>
+	<div class="center_new w3-center">
+		<h1>A True Lifetime Investment</h1>
+		<a href="#about"><i class="fas fa-angle-double-down"></i></a>
+	</div>
+</div>
+<!---------------sec_7--------------------->
+<div class="row_about" >
+	<div id="about" style="visibility: hidden; font-size: .1vw;">link</div>
+	<div  class="column_about left_about"  >		
+	<div class="sec_8"><div class="hr-sect w3-padding" style="color: #ffffff;">ABOUT Us</div></div>
+		<h1>What is BL Realty?</h1><br>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nesciunt sint, esse iure eius voluptatibus perspiciatis sequi fuga magni perferendis beatae ratione, nam culpa veritatis dolore sunt ut minus qui Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ea delectus doloremque adipisci autem deleniti non nostrum, suscipit soluta perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores pariatur animi sunt, assumenda dicta distinctio nostrum nisi, ullam dignissimos dolor!</p>
+		<div class="w3-center ceo">
+		    <img src="image/lebss.png">
+		    <h1>BL Realty® | Chief Excecutive Officer</h1>
+		    <h3>Mr. Libe Amaro Bantay</h3>
+		    <p class="qoute">"Saving money is good but investing it is the best, It is better to invest money in realty than to save it in the bank"</p>
+		    <p>PRC Lic.# 0031366 - HLURB Lic.# 01436</p>
+		</div>
+		<div class="col-md-12 net w3-center">
+        <ul class="social-network social-circle">
+            <li><a href="#" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="icoGoogle" title="Gmail"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="#" class="youtube" title="Youtube"><i class="fab fa-youtube"></i></a></li>  
+        </ul>				
+		</div>
+		<div class="sec_8">
+			<div class="hr-sect w3-padding" style="font-family: 'Beth Ellen'; color: #ffffff;">BL Realty®</div>
+		</div>
+	</div>
+
+</div>
+<!---------------sec_8--------------------->
+<div class="sec_10"><div id="about" class="hr-sect w3-padding">OUR BLOGs</div></div>
+<div class="row_blog">
+  <div class="column_blog">
+    <div class="card_blog w3-center">
+      <img src="image/a1.jpg"style="width:100%">
+      <div class="middle_blog">
+        <a class="a1" onclick="show_vid('1')"><i class="fas fa-play"></i></a>
+      </div>
+      <h1>1 @ The Orchard</h1>
+      <p><i class="far fa-calendar-alt"></i> Jan. 18 2019</p>
+    </div>
+  </div>
+  <div class="column_blog">
+    <div class="card_blog w3-center">
+      <img src="image/a1.jpg"style="width:100%">
+      <div class="middle_blog">
+        <a class="a2" onclick="show_vid('2')"><i class="fas fa-play"></i></a>
+      </div>
+      <h1>2 @ The Orchard</h1>
+      <p><i class="far fa-calendar-alt"></i> Jan. 18 2019</p>
+    </div>
+  </div>
+  <div class="column_blog">
+    <div class="card_blog w3-center">
+      <img src="image/a1.jpg"style="width:100%">
+      <div class="middle_blog">
+        <a class="a3" onclick="show_vid('3')"><i class="fas fa-play"></i></a>
+      </div>
+      <h1>3 @ The Orchard</h1>
+      <p><i class="far fa-calendar-alt"></i> Jan. 18 2019</p>
+    </div>
+  </div>
+</div>
+
+<div class="all_blogs blog_1"><!--vid_1-->
+  <video class="video_1" src="image/vid.mp4" controls="true"></video>
+  <span class="all_cbtn close_1">&times;</span>
+</div>
+<div class="all_blogs blog_2"><!--vid_2-->
+  <video class="video_2" src="image/vid.mp4" controls="true"></video>
+  <span class="all_cbtn close_2">&times;</span>
+</div>
+<div class="all_blogs blog_3"><!--vid_3-->
+  <video class="video_3" src="image/vid.mp4" controls="true"></video>
+  <span class="all_cbtn close_3">&times;</span>
+</div>
+<div class="btn_viewall w3-center">
+  <a href="blog.html" style="margin-bottom: 2vw;">See all blog's ></a>
+</div>
+<!---------------sec_9--------------------->
+<div class="w3-center end">
+	<p><a href="#">TERMS AND CONDITION</a> | <a href="#">PRIVACY NOTICE</a></p>
+	<h3>Copyright © 2020 BL Realty. All rights reserved.</h3>
+</div>
+<!----------fixie_buttons----------->
+<a href="#top" id="myBtn" class="btn_back_top"><i class="fas fa-chevron-up"></i></a>
+<a href="#" class="meme fa-3x"><i class="fab fa-facebook-messenger "></i></a>
+<!-----------javascript------------>
+<script type="text/javascript">
+function show_vid(num){// for blogs
+  const close = document.querySelector(".close_"+ num);
+  const blog = document.querySelector(".blog_"+ num);
+  const video = document.querySelector(".video_"+ num);
+  blog.style.visibility = "visible";
+  blog.style.opacity = 1;
+
+  close.addEventListener('click', ()=>{
+  blog.style.visibility = "hidden";
+  blog.style.opacity = 0;
+
+  video.pause();
+  video.currentTime = 0;
+  });
+}
+
+function show_img(element, name){// for image
+	document.getElementById("img01_" + name).src = element.src;
+	document.getElementById("modal01_" + name).style.display = "block";
+}
+
+function openModal_0(evt, ids, cityName, k_city, k_tab) {// for modals
+	document.getElementById(ids).style.display='block';
+	document.getElementsByClassName(k_tab)[0].click();
+  var i, x, tablinks;
+  x = document.getElementsByClassName(k_city);
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName(k_tab);
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("w3-light-grey");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.classList.add("w3-light-grey");
+}
+
+var mySwiper = new Swiper('.swiper-container', {//swiper
+speed: 1000,// speed of slides 
+autoplay: {//autoplay
+	delay: 4500,
+	disableOnInteraction: true,
+},
+direction: 'horizontal',
+loop: true,
+pagination: {// If we need pagination
+	el: '.swiper-pagination',
+},
+navigation: {// Navigation arrows
+	nextEl: '.swiper-button-next',
+	prevEl: '.swiper-button-prev',
+},
+scrollbar: { // And if we need scrollbar
+	el: '.swiper-scrollbar',
+},
+})
+
+$(document).ready(function(){// Add smooth scrolling to all links
+  $("a").on('click', function(event) {  
+    if (this.hash !== "") {// Make sure this.hash has a value before overriding default behavior   
+      event.preventDefault();// Prevent default anchor click behavior    
+      var hash = this.hash;// Store hash
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;// Add hash (#) to URL when done scrolling (default click behavior)
+      });
+    } // End if
+  });
+});
+
+var mybutton = document.getElementById("myBtn");//scroll up button
+window.onscroll = function() {scrollFunction()};// When the user scrolls down 20px from the top of the document, show the button
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
+<!--000_STARTER_OFFER hostiger-->
