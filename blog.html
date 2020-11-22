@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BL Realty® | Blogs</title>
+<meta  charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script><!--navbar-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<style type="text/css">
+*{
+  font-family: 'Poppins';
+}
+.navbar .navbar-brand{
+  font-size: 1.2vw;
+  padding: 1.3vw 1.5vw;
+}
+.navbar ul li a{
+  font-size: 1.1vw;
+  padding: 1.3vw 1.5vw;
+}
+.nav .activee{
+  background-color: none;
+  border-bottom: .5vw solid #0FEE0B;
+}
+.nav li:nth-child(1):hover,.nav li:nth-child(2):hover,.nav li:nth-child(4):hover,.nav li:nth-child(5):hover{
+  border-bottom: .5vw solid #0FEE0B;
+}
+.navbar{
+  border: none;
+  z-index: 2;  
+}
+.navbar-right img{ 
+  width: 12vw;
+  height: 4vw;
+}
+/*sec_1*/
+.column_new{
+  float: left;
+  width: 100%;
+}
+.parallax_new {
+  background-image: url("image/mesilo-fff.jpg");
+  margin-top: -2.5vw;
+  min-height: 70vw; 
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(50% 17%, 100% 0, 100% 84%, 50% 100%, 0 84%, 0 0);
+  clip-path: polygon(50% 17%, 100% -1000000%, 100% 94%, 50% 100%, 0 94%, 0 -1000000%);
+}
+.center_new {
+  margin: 0 20vw;
+  padding-top: 20vw;
+  transform: translateY(-5vw);
+  position: absolute;
+  color: #3498DB;
+}
+.center_new h1{
+  font-size: 7vw;
+  font-weight: bold;
+}
+.center_new a{
+  display: inline-block;
+  font-size: 2.5vw;
+  text-decoration: none;
+  padding: 1vw 2vw;
+  background-color: #3498DB;
+  color: #fff;
+  border-radius: 50%;
+  margin-top: 1vw;
+}
+.center_new a:hover{
+  background-color: #fff;
+  color: #3498DB;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*sec_2*/
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.35);
+  margin: 8px 0px;
+}
+.hr-sect::before,
+.hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 8px;
+}
+.margin {
+  margin-top: 2vw;
+}
+.margin h2 {
+  font-size: 3vw;
+}
+.margin .hr-sect {
+  font-size: 1.3vw;
+  margin: 0 30vw;
+}
+.btn_back_top {
+  display: none;
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  z-index: 2;
+  font-size: 1vw;
+  border: none;
+  box-shadow: 0px 0px 0px 8px rgba(253,254,254,0.3);  
+  outline: none;
+  background: linear-gradient(360deg,#33ccff,#5DADE2);
+  color: #fff;
+  cursor: pointer;
+  padding: 1vw 1.3vw;
+  border-radius: .5vw;
+}
+.btn_back_top:hover {
+  filter: opacity(80%);
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*sec_3*/
+.column_blog {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 1vw;
+}
+.row_blog {
+  padding: 0 5vw;
+  padding-top: 3vw;
+  padding-bottom: 96vw;
+}
+.middle_blog{
+  transform: translateY(-11vw);
+}
+.card_blog img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card_blog h1{
+  margin-top: -3.5vw;
+  font-size: 1.6vw;
+  text-align: left;
+  font-weight: bold;
+  padding: 0 1vw;
+}
+.card_blog p{
+  text-align: left;
+  font-size: 1.2vw;
+  padding: 0 1vw;
+  margin-top: -.2vw;
+}
+.card_blog a{
+  top: 50%;
+  color: #ffffff;
+  font-size: 3vw;
+  padding: .8vw 1.7vw;
+  background: linear-gradient(360deg,#33ccff,#5DADE2);
+  border-radius: 50%;  
+  box-shadow: 0px 0px 0px 8px rgba(253,254,254,0.3); 
+  cursor: pointer;
+}
+.card_blog a:hover{
+  opacity: 80%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.card_blog .fa-calendar{
+  color: #33ccff;
+}
+.all_blogs{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,.9);
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+}
+.all_blogs video{
+  max-width: 900px;
+  outline: none;
+  position: relative;
+}
+.all_cbtn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #fff;
+  font-size: 42px;
+  cursor: pointer;
+}
+/*social_icon*/
+.net {
+  margin-top: 0vw;
+}
+.net ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left:0 !important;
+  padding: 0;
+}
+.net ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+/* footer social icons */
+.social-network a.instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.social-network a.icoFacebook:hover {
+  background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+  background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+  background-color:#BD3518;
+}
+.social-network a.youtube:hover {
+  background-color:#FF0000;
+}
+.social-network a.instagram:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.youtube:hover i {
+  color:#fff;
+}
+.social-network a.socialIcon:hover, .socialHoverClass {
+  color:#44BCDD;
+}
+.social-circle li a {
+  display:inline-block;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  text-align:center;
+  width: 4vw;
+  height: 4vw;
+  font-size: 1.5vw;
+}
+.social-circle li i {
+  margin:0;
+  line-height:5vw;
+  text-align: center;
+}
+.social-circle li a:hover i, .triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.social-circle i {
+  color: #3498DB;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.social-network a {
+  background-color: #ffffff;   
+}
+/*footer*/
+.end{
+  padding: .5vw .5vw;
+  background-color: #3498DB;
+  margin-top: 9vw;
+}
+.end a{
+  text-decoration: none;
+  font-size: 1vw;
+  color: #ffffff;
+}
+.end a:hover{
+  border-bottom: .1vw solid #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.end p{
+  padding: .5vw 0;
+  color: #ffffff;
+  font-size: 1vw;
+}
+.end h3{
+  margin-top: -.5vw;
+  font-size: 1.3vw;
+  color: #ffffff;
+}
+.meme {
+  position: fixed;
+  bottom: 2vw;
+  left: 2vw;
+  z-index: 2;
+  font-size: 4vw;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 0px 8px rgba(253,254,254,0.3); 
+  background: #006AFF;
+  color: #fff;
+  cursor: pointer;
+  padding: .3vw 1.2vw;
+  border-radius: 50%;
+}
+.meme:hover{
+  filter: opacity(80%);
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (max-width: 1450px){
+  .net {
+    transform: translateY(-.5vw);
+  }
+}
+@media (max-width: 1350px){
+  .net {
+    transform: translateY(-1vw);
+  }
+}
+@media (max-width: 1300px){
+  .net {
+    transform: translateY(-1.5vw);
+  }
+}
+@media (max-width: 1280px){
+  .end{
+    margin-top: 9.5vw;
+  }
+}
+@media (max-width: 1250px){
+  .end{
+    margin-top: 10vw;
+  }
+}
+@media (max-width: 1200px){
+  .end{
+    margin-top: 10.5vw;
+  }
+}
+@media (max-width: 1150px){
+  .end{
+    margin-top: 11vw;
+  5
+}
+@media (max-width: 1080px){
+  .end{
+    margin-top: 12vw;
+  }
+}
+@media (max-width: 1050px){
+  .row_blog{
+    padding-bottom: 96vw;
+  }
+  .end{
+    padding: 10px .5vw;
+  }
+}
+@media (max-width: 1000px){
+  .nav .activee{
+    background-color: none;
+    border-bottom: 5px solid #0FEE0B;
+  }
+  .nav li:nth-child(1):hover,.nav li:nth-child(2):hover,.nav li:nth-child(4):hover,.nav li:nth-child(5):hover{
+    border-bottom: 5px solid #0FEE0B;
+  }
+  .navbar .navbar-brand{
+    font-size: 15px;
+    padding: 15px 15px;
+  }
+  .navbar ul li a{
+    font-size: 14px;
+    padding: 15px 15px;
+  }
+  .navbar-right img{
+    width: 165px;
+    height: 55px;
+  }
+  .center_new h1{
+    font-size: 60px;
+  }
+  .center_new a{
+    font-size: 25px;
+    padding: 15px 25px;
+    margin-top: 10px;
+  }
+  .margin .hr-sect {
+    font-size: 18px;
+    margin: 0;
+  }
+  .margin h2 {
+    font-size: 40px;
+  }
+  .row_blog{
+    padding-bottom: 99vw;
+  }
+  .btn_back_top {
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px; 
+    padding: 10px 15px;
+  }
+  .card_blog h1{
+    margin-top: -35px;
+    font-size: 18px;
+    padding: 0 1vw;
+  }
+  .card_blog p{
+    text-align: left;
+    font-size: 14px;
+    padding: 0 1vw;
+    margin-top: -.2vw;
+  }
+  .card_blog a{
+    font-size: 30px;
+    padding: 8px 17px;
+  }
+  .social-circle li a {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .social-circle li i {
+    line-height: 50px;
+  }
+  .end{
+    margin-top: 11.5vw;
+  }
+  .end a{
+    font-size: 12px;
+  }
+  .end p{
+    font-size: 12px;
+  }
+  .end h3{
+    font-size: 15px;
+  }
+  .btn_back_top {
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+  .meme {
+    bottom: 20px;
+    left: 20px;
+    font-size: 40px;
+    padding: 3px 12px;
+  }
+}
+@media (max-width: 991px){
+  .row_blog{
+    padding-bottom: 100vw;
+  }
+  .end{
+    margin-top: 0vw; 
+    padding: 10px .5vw;
+  }
+}
+@media (max-width: 901px){
+  .all_blogs video{
+    max-width: 90%;
+  }
+}
+@media (max-width: 850px){
+  .row_blog{
+    padding-bottom: 110vw;
+  }
+}
+@media (max-width: 800px){
+  .column_blog {
+    width: 100%;
+    display: block;
+  }
+  .middle_blog{
+    transform: translateY(-30vw);
+  }
+  .row_blog{
+    padding-bottom: 830vw;
+  }
+}
+@media (max-width: 767px){
+  .navbar-right img{
+    margin-left: -15px;
+  }
+}
+@media (max-width: 680px){
+  .center_new{
+    margin: 0;
+  }
+  .row_blog{
+    padding-bottom: 850vw;
+  }
+}
+@media (max-width: 600px){
+  .row_blog {
+    padding: 0 2vw;
+    padding-bottom: 915vw;
+}
+@media (max-width: 549px){
+  .center_new{
+    margin: 0 3vw;
+    transform: translateY(-1vw);
+  }
+  .parallax_new {
+    min-height: 140vw;
+  }
+  .center_new h1{
+    font-size: 80px;
+  }
+  .margin {
+    margin-top: 0vw;
+  }
+  .row_blog {
+    padding-bottom: 925vw;
+  }
+}
+@media (max-width: 490px){
+  .center_new{
+    margin: 0 0vw;
+  }
+  .row_blog {
+    padding-bottom: 950vw;
+  }
+}
+@media (max-width: 460px){
+  .center_new h1{
+    font-size: 70px;
+  }
+}
+@media (max-width: 458px){
+  .margin {
+    margin-top: 0vw;
+  }
+  .row_blog {
+    padding-bottom: 960vw;
+  }
+}
+@media (max-width: 403px){
+  .center_new h1{
+    font-size: 65px;
+  }
+  .row_blog {
+    padding-bottom: 990vw;
+  }
+}
+@media (max-width: 374px){
+  .center_new h1{
+    font-size: 60px;
+  }
+  .row_blog {
+    padding-bottom: 1010vw;
+  }
+}
+@media (max-width: 346px){
+  .center_new h1{
+    font-size: 55px;
+  }
+  .row_blog {
+    padding-bottom: 1025vw;
+  }
+}
+</style>
+</head>
+<body>
+<!-------------navbar---------------->
+<nav class="navbar navbar-default  navbar-fixed-top" style=" background-color: rgba(255, 255, 255 ,1)!important;-webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);">
+  <div class="container-fluid ">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand " href="index.html" style="color: #424949;">Beaulah Land Realty®</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="listing.html">Property Listing</a></li>
+        <li class="activee"><a href="blog.html" style="color: #424949;">Blogs</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right icon">
+        <!--something to right-->
+        <img src="image/logss.png">
+      </ul>
+    </div>
+  </div>
+</nav>
+<!------------sec_1--------------->
+<div class="row_new" id="top">
+  <div class="column_new parallax_new"></div>
+  <div class="center_new w3-center">
+    <h1>Beaulah Land Realty<span style="color: #0FEE0B;"> Blogs</span></h1>
+    <a href="#blogs"><i class="fas fa-angle-double-down"></i></a>
+  </div>
+</div>
+<!------------sec_2---------------->
+<div class="margin" >
+  <h1 style="visibility: hidden; font-size: 1.5vw;">h</h1>
+  <div class="hr-sect w3-padding" id="blogs">BLOGs</div>
+  <h2 class="w3-center">Watch our blogs and be inspired</h2>
+</div>
+
+<div class="row_blog">
+  <div class="column_blog">
+    <div class="card_blog w3-center">
+      <img src="image/a1.jpg"style="width:100%">
+      <div class="middle_blog">
+        <a class="a1" onclick="show_vid('1')"><i class="fas fa-play"></i></a>
+      </div>
+      <h1>1 @ The Orchard</h1>
+      <p><i class="far fa-calendar-alt"></i> Jan. 18 2019</p>
+    </div>
+  </div>
+  <div class="column_blog">
+    <div class="card_blog w3-center">
+      <img src="image/a1.jpg"style="width:100%">
+      <div class="middle_blog">
+        <a class="a2" onclick="show_vid('2')"><i class="fas fa-play"></i></a>
+      </div>
+      <h1>2 @ The Orchard</h1>
+      <p><i class="far fa-calendar-alt"></i> Jan. 18 2019</p>
+    </div>
+  </div>
+  <div class="column_blog">
+    <div class="card_blog w3-center">
+      <img src="image/a1.jpg"style="width:100%">
+      <div class="middle_blog">
+        <a class="a3" onclick="show_vid('3')"><i class="fas fa-play"></i></a>
+      </div>
+      <h1>3 @ The Orchard</h1>
+      <p><i class="far fa-calendar-alt"></i> Jan. 18 2019</p>
+    </div>
+  </div>
+  <div class="column_blog">
+    <div class="card_blog w3-center">
+      <img src="image/a1.jpg"style="width:100%">
+      <div class="middle_blog">
+        <a class="a4" onclick="show_vid('4')"><i class="fas fa-play"></i></a>
+      </div>
+      <h1>4 @ The Orchard</h1>
+      <p><i class="far fa-calendar-alt"></i> Jan. 18 2019</p>
+    </div>
+  </div>
+  <div class="column_blog">
+    <div class="card_blog w3-center">
+      <img src="image/a1.jpg"style="width:100%">
+      <div class="middle_blog">
+        <a class="a5" onclick="show_vid('5')"><i class="fas fa-play"></i></a>
+      </div>
+      <h1>5 @ The Orchard</h1>
+      <p><i class="far fa-calendar-alt"></i> Jan. 18 2019</p>
+    </div>
+  </div>
+  <div class="column_blog">
+    <div class="card_blog w3-center">
+      <img src="image/a1.jpg"style="width:100%">
+      <div class="middle_blog">
+        <a class="a6" onclick="show_vid('6')"><i class="fas fa-play"></i></a>
+      </div>
+      <h1>6 @ The Orchard</h1>
+      <p><i class="far fa-calendar-alt"></i> Jan. 18 2019</p>
+    </div>
+  </div>
+    <div class="column_blog">
+    <div class="card_blog w3-center">
+      <img src="image/a1.jpg"style="width:100%">
+      <div class="middle_blog">
+        <a class="a7" onclick="show_vid('7')"><i class="fas fa-play"></i></a>
+      </div>
+      <h1>7 @ The Orchard</h1>
+      <p><i class="far fa-calendar-alt"></i> Jan. 18 2019</p>
+    </div>
+  </div>
+  <div class="column_blog">
+    <div class="card_blog w3-center">
+      <img src="image/a1.jpg"style="width:100%">
+      <div class="middle_blog">
+        <a class="a8" onclick="show_vid('8')"><i class="fas fa-play"></i></a>
+      </div>
+      <h1>8 @ The Orchard</h1>
+      <p><i class="far fa-calendar-alt"></i> Jan. 18 2019</p>
+    </div>
+  </div>
+  <div class="column_blog">
+    <div class="card_blog w3-center">
+      <img src="image/a1.jpg"style="width:100%">
+      <div class="middle_blog">
+        <a class="a9" onclick="show_vid('9')"><i class="fas fa-play"></i></a>
+      </div>
+      <h1>9 @ The Orchard</h1>
+      <p><i class="far fa-calendar-alt"></i> Jan. 18 2019</p>
+    </div>
+  </div>
+  <div class="column_blog">
+    <div class="card_blog w3-center">
+      <img src="image/a1.jpg"style="width:100%">
+      <div class="middle_blog">
+        <a class="a10" onclick="show_vid('10')"><i class="fas fa-play"></i></a>
+      </div>
+      <h1>10 @ The Orchard</h1>
+      <p><i class="far fa-calendar-alt"></i> Jan. 18 2019</p>
+    </div>
+  </div>
+  <div class="column_blog">
+    <div class="card_blog w3-center">
+      <img src="image/a1.jpg"style="width:100%">
+      <div class="middle_blog">
+        <a class="a11" onclick="show_vid('11')"><i class="fas fa-play"></i></a>
+      </div>
+      <h1>11 @ The Orchard</h1>
+      <p><i class="far fa-calendar-alt"></i> Jan. 18 2019</p>
+    </div>
+  </div>
+  <div class="column_blog">
+    <div class="card_blog w3-center">
+      <img src="image/a1.jpg"style="width:100%">
+      <div class="middle_blog">
+        <a class="a12" onclick="show_vid('12')"><i class="fas fa-play"></i></a>
+      </div>
+      <h1>12 @ The Orchard</h1>
+      <p><i class="far fa-calendar-alt"></i> Jan. 18 2019</p>
+    </div>
+  </div>
+</div>
+<div class="all_blogs blog_1"><!--vid_1-->
+  <video class="video_1" src="image/vid.mp4" controls="true"></video>
+  <span class="all_cbtn close_1">&times;</span>
+</div>
+<div class="all_blogs blog_2"><!--vid_2-->
+  <video class="video_2" src="image/vid1.mp4" controls="true"></video>
+  <span class="all_cbtn close_2">&times;</span>
+</div>
+<div class="all_blogs blog_3"><!--vid_3-->
+  <video class="video_3" src="image/vid2.mp4" controls="true"></video>
+  <span class="all_cbtn close_3">&times;</span>
+</div>
+<div class="all_blogs blog_4"><!--vid_4-->
+  <video class="video_4" src="image/vid3.mp4" controls="true"></video>
+  <span class="all_cbtn close_4">&times;</span>
+</div>
+<div class="all_blogs blog_5"><!--vid_5-->
+  <video class="video_5" src="image/vid.mp4" controls="true"></video>
+  <span class="all_cbtn close_5">&times;</span>
+</div>
+<div class="all_blogs blog_6"><!--vid_6-->
+  <video class="video_6" src="image/vid.mp4" controls="true"></video>
+  <span class="all_cbtn close_6">&times;</span>
+</div>
+<div class="all_blogs blog_7"><!--vid_7-->
+  <video class="video_7" src="image/vid.mp4" controls="true"></video>
+  <span class="all_cbtn close_7">&times;</span>
+</div>
+<div class="all_blogs blog_8"><!--vid_8-->
+  <video class="video_8" src="image/vid.mp4" controls="true"></video>
+  <span class="all_cbtn close_8">&times;</span>
+</div>
+<div class="all_blogs blog_9"><!--vid_9-->
+  <video class="video_9" src="image/vid.mp4" controls="true"></video>
+  <span class="all_cbtn close_9">&times;</span>
+</div>
+<div class="all_blogs blog_10"><!--vid_10-->
+  <video class="video_10" src="image/vid.mp4" controls="true"></video>
+  <span class="all_cbtn close_10">&times;</span>
+</div>
+<div class="all_blogs blog_11"><!--vid_11-->
+  <video class="video_11" src="image/vid.mp4" controls="true"></video>
+  <span class="all_cbtn close_11">&times;</span>
+</div>
+<div class="all_blogs blog_12"><!--vid_12-->
+  <video class="video_12" src="image/vid.mp4" controls="true"></video>
+  <span class="all_cbtn close_12">&times;</span>
+</div>
+<!----------social_icons------------>
+<div class="col-md-12 net w3-center">
+    <ul class="social-network social-circle">
+       <li><a href="#" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+       <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+       <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+       <li><a href="#" class="icoGoogle" title="Gmail"><i class="fas fa-envelope"></i></a></li>
+       <li><a href="#" class="youtube" title="Youtube"><i class="fab fa-youtube"></i></a></li> 
+    </ul>       
+</div>
+<!---------------footer--------------------->
+<div class="w3-center end">
+  <p><a href="#">TERMS AND CONDITION</a> | <a href="#">PRIVACY NOTICE</a></p>
+  <h3>Copyright © 2020 BL Realty. All rights reserved.</h3>
+</div>
+<!--------back_to_top_button-------->
+<a href="#top" id="myBtn" class="btn_back_top"><i class="fas fa-chevron-up"></i></a>
+<a href="#" class="meme fa-3x"><i class="fab fa-facebook-messenger"></i></a>
+<!------------javascript------------>
+<script type="text/javascript">
+function show_vid(num){
+  const close = document.querySelector(".close_"+ num);
+  const blog = document.querySelector(".blog_"+ num);
+  const video = document.querySelector(".video_"+ num);
+  blog.style.visibility = "visible";
+  blog.style.opacity = 1;
+
+  close.addEventListener('click', ()=>{
+  blog.style.visibility = "hidden";
+  blog.style.opacity = 0;
+
+  video.pause();
+  video.currentTime = 0;
+  });
+}
+
+$(document).ready(function(){//btn smoothness
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+var mybutton = document.getElementById("myBtn");//scroll up button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>

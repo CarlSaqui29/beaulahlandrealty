@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BL Realty® | About</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Beth Ellen' rel='stylesheet'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<!--navbar-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style type="text/css">
+*{
+  font-family: 'Poppins';
+}
+body:not(.navbar) .navbar {
+  background-color: rgba(255, 255, 255 ,1)!important;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+body{
+  background-color: #3498DB;
+}
+.navbar .navbar-brand{
+  font-size: 1.2vw;
+  padding: 1.3vw 1.5vw;
+}
+.navbar ul li a{
+  font-size: 1.1vw;
+  padding: 1.3vw 1.5vw;
+}
+.nav .activee{
+  background-color: none;
+  border-bottom: .5vw solid #0FEE0B;
+}
+.nav li:nth-child(1):hover,.nav li:nth-child(2):hover,.nav li:nth-child(3):hover,.nav li:nth-child(4):hover{
+  border-bottom: .5vw solid #0FEE0B;
+}
+.navbar{
+  border: none;
+  z-index: 2;	
+}
+.navbar-right img{
+  width: 12vw;
+  height: 4vw;
+}
+/*sec_1*/
+
+.row_new{
+  position: relative;
+  z-index: 1;
+}
+.row_new:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column_new{
+  float: left;
+  width: 100%;
+}
+.parallax_new {
+  background-image: url("image/mesilo-fff.jpg");
+  margin: 0 ;
+  min-height: 70vw; 
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(50% 17%, 100% 0, 100% 84%, 50% 100%, 0 84%, 0 0);
+  clip-path: polygon(50% 17%, 100% -1000000%, 100% 94%, 50% 100%, 0 94%, 0 -1000000%);
+}
+.center_new {
+  margin: 0 20vw;
+  padding-top: 20vw;
+  transform: translateY(-5vw);
+  position: absolute;
+  color: #3498DB;
+}
+.center_new h1{
+  font-size: 7vw;
+  font-weight: bold;
+}
+.center_new a{
+  display: inline-block;
+  font-size: 2.5vw;
+  text-decoration: none;
+  padding: 1vw 2vw;
+  background-color: #3498DB;
+  color: #fff;
+  border-radius: 50%;
+  margin-top: 1vw;
+}
+.center_new a:hover{
+  background-color: #fff;
+  color: #3498DB;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*sec_7*/
+.sec_8 .hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(253, 254, 254);
+  margin: 8px 0px;
+}
+.sec_8 .hr-sect::before,
+.sec_8 .hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(253, 254, 254);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 8px;
+}
+.column_about {
+  position: relative;
+  background: #3498DB;
+  z-index: 0;
+  margin-top: -140px;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-align: center;
+}
+.column_about img {
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+  width: 11vw;
+  height: 10vw;
+  border-radius: 50%;
+}
+.column_about h1{
+  font-size: 3vw;
+  margin-top: -.3vw;
+  font-weight: bold;
+  color: #ffffff; 
+}
+.ceo h3{
+  font-size: 2vw;
+}
+.column_about p{
+  font-size: 1.4vw;
+}
+.column_about .qoute{
+  font-size: 1.4vw;
+}
+.row_about:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left_about{
+  width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 200px; 
+  padding-bottom: 2vw;
+}
+.row_about a{
+  font-size: 1.3vw;
+  border-radius: 5vw;
+  text-decoration: none;
+  padding: .5vw 1vw;
+  background-color: #3498DB;
+  color: #fff;
+}
+.row_about a:hover{
+  background-color: #fff;
+  color: #3498DB;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.net {
+  margin-top: 2vw;
+}
+.net ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left:0 !important;
+  padding: 0;
+}
+.net ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+/* footer social icons */
+.social-network a.instagram:hover {
+  background-color:#3498DB;
+/*background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);*/
+}
+.social-network a.icoFacebook:hover {
+  background-color:#3498DB;/*3B5998*/;
+}
+.social-network a.icoTwitter:hover {
+  background-color:#3498DB;/*33ccff*/;
+}
+.social-network a.icoGoogle:hover {
+  background-color:#3498DB;/*BD3518*/;
+}
+.social-network a.youtube:hover {
+  background-color:#3498DB;/*FF0000*/;
+}
+.social-network a.instagram:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.youtube:hover i {
+  color:#fff;
+}
+.social-network a.socialIcon:hover, .socialHoverClass {
+  color:#44BCDD;
+}
+.social-circle li a {
+  display:inline-block;
+  position:relative;
+  margin:0 auto 0 auto;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  text-align:center;
+  width: 4vw;
+  height: 4vw;
+  font-size: 1.5vw;
+}
+.social-circle li i {
+  margin:0;
+  line-height:5vw;
+  text-align: center;
+}
+.social-circle li a:hover i, .triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.social-circle i {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.social-network a {
+  background-color: #3498DB;   
+}
+.sec_8 .hr-sect {
+  font-size: 1.3vw;
+  margin: 0 30vw;
+}
+
+/*sec_9*/
+.end{
+  padding: .5vw .5vw;
+  background-color: #3498DB;
+}
+.end a{
+  text-decoration: none;
+  font-size: 1vw;
+  color: #ffffff;
+}
+.end a:hover{
+  border-bottom: .1vw solid #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.end p{
+  padding: .5vw 0;
+  color: #ffffff;
+  font-size: 1vw;
+}
+.end h3{
+  margin-top: -.5vw;
+  font-size: 1.3vw;
+  color: #ffffff;
+}
+/*btn_back*/
+.btn_back_top {
+  display: none;
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  z-index: 2;
+  font-size: 1vw;
+  border: none;
+  box-shadow: 0px 0px 0px 8px rgba(253,254,254,0.3);  
+  outline: none;
+  background: linear-gradient(360deg,#33ccff,#5DADE2);
+  color: #fff;
+  cursor: pointer;
+  padding: 1vw 1.3vw;
+  border-radius: .5vw;
+}
+.btn_back_top:hover {
+  filter: opacity(80%);
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.meme {
+  position: fixed;
+  bottom: 2vw;
+  left: 2vw;
+  z-index: 2;
+  font-size: 4vw;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 0px 8px rgba(253,254,254,0.3); 
+  background: #006AFF;
+  color: #fff;
+  cursor: pointer;
+  padding: .3vw 1.2vw;
+  border-radius: 50%;
+}
+.meme:hover{
+  filter: opacity(80%);
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (max-width: 1050px){
+  .end{
+    padding: 10px .5vw;
+  }
+}
+@media (max-width: 1000px){
+  .nav .activee{
+    background-color: none;
+    border-bottom: 5px solid #0FEE0B;
+  }
+  .nav li:nth-child(1):hover,.nav li:nth-child(2):hover,.nav li:nth-child(3):hover,.nav li:nth-child(4):hover{
+    border-bottom: 5px solid #0FEE0B;
+  }
+  .navbar-right img{
+    width: 165px;
+    height: 55px;
+  }
+  .navbar .navbar-brand{
+    font-size: 15px;
+    padding: 15px 15px;
+  }
+  .navbar ul li a{
+    font-size: 14px;
+    padding: 15px 15px;
+  }
+  .center_new h1{
+	font-size: 60px;
+  }
+  .center_new a{
+	font-size: 25px;
+	padding: 15px 25px;
+	margin-top: 10px;
+  }
+  .column_about img {
+	width: 110px;
+	height: 100px;
+  }
+  .column_about .qoute{
+	font-size: 17px;
+  }
+  .left_about{
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 200px; 
+	padding-bottom: 50px;
+  }
+  .column_about h1{
+	font-size: 32px;
+  }
+  .column_about p{
+	font-size: 16px;
+  }
+  .ceo h3{
+    font-size: 20px;
+  }
+  .row_about a{
+	margin-top: 20px;
+	font-size: 13px;
+	padding: 5px 10px;
+  }
+  .social-circle li a {
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+  }
+  .social-circle li i {
+	line-height: 50px;
+  }
+  .net {
+	margin-top: 20px;
+  }
+  .sec_8	 .hr-sect {
+	font-size: 18px;
+	margin: 0;
+  }
+  .sec_10	 .hr-sect {
+	font-size: 18px;
+	margin: 0;
+  }
+  .end a{
+	font-size: 12px;
+  }
+  .end p{
+	font-size: 12px;
+  }
+  .end h3{
+	font-size: 15px;
+  }
+  .btn_back_top {
+	bottom: 20px;
+	right: 20px;
+	font-size: 20px;
+	padding: 10px 15px;
+  }
+  .meme {
+    bottom: 20px;
+    left: 20px;
+    font-size: 40px;
+    padding: 3px 12px;
+  }
+}
+@media (max-width: 767px){
+  .navbar-right img{
+    margin-left: -15px;
+  }
+}
+@media (max-width: 700px){
+  .left_about{
+	width: 100%;
+  }
+}
+@media (max-width: 680px){
+  .center_new{
+	margin: 0;
+  }
+}
+@media (max-width: 550px){
+  .column_about{
+	text-align: center;
+  }
+  .parallax_new {
+    min-height: 210vw;
+  }
+}
+@media (max-width: 549px){
+  .parallax_new {
+	min-height: 140vw;
+  }
+  .center_new h1{
+	font-size: 50px;
+  }
+  .center_new a{
+	font-size: 25px;
+	padding: 15px 25px;
+  }
+}
+@media (max-width: 490px){
+  .center_new{
+    margin: 0 0vw;
+  }
+}
+@media (max-width: 460px){
+  .center_new h1{
+    font-size: 70px;
+  }
+}
+@media (max-width: 421px){
+  .social-circle li a {
+	width: 45px;
+	height: 45px;
+	font-size: 17px;
+  }
+  .left_about{
+	padding-left: 20px;
+	padding-right: 20px;
+  }
+}
+@media (max-width: 403px){
+  .center_new h1{
+    font-size: 65px;
+  }
+}
+@media (max-width: 374px){
+  .center_new h1{
+    font-size: 60px;
+  }
+}
+@media (max-width: 346px){
+  .center_new h1{
+    font-size: 55px;
+  }
+}
+</style>
+</head>
+<body>
+<!---------------navbar--------------->
+<nav class="navbar navbar-default  navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+			<a class="navbar-brand " href="#top" style="color: #424949;">Beaulah Land Realty®</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="listing.html">Property Listing</a></li>
+				<li><a href="blog.html">Blogs</a></li>
+				<li class="activee"><a href="#about" style="color: #424949;">About Us</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right icon">
+				<!--something to right-->
+        <img src="image/logss.png">
+			</ul>
+		</div>
+	</div>
+</nav>
+<!----------------sec_1------------------->
+<div class="row_new" id="top">
+	<div class="column_new parallax_new"></div>
+	<div class="center_new w3-center">
+		<h1>Beaulah Land Realty <span style="color: #0FEE0B;">About Us</span></h1>
+		<a href="#about"><i class="fas fa-angle-double-down"></i></a>
+	</div>
+</div>
+<!---------------sec_2--------------------->
+<div class="row_about" >
+	<div id="about" style="visibility: hidden; font-size: .1vw;">link</div>
+	<div  class="column_about left_about"  >		
+	<div class="sec_8"><div class="hr-sect w3-padding" style="color: #ffffff;">ABOUT Us</div></div>
+		<h1>What is BL Realty?</h1><br>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nesciunt sint, esse iure eius voluptatibus perspiciatis sequi fuga magni perferendis beatae ratione, nam culpa veritatis dolore sunt ut minus qui Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ea delectus doloremque adipisci autem deleniti non nostrum, suscipit soluta perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores pariatur animi sunt, assumenda dicta distinctio nostrum nisi, ullam dignissimos dolor!</p>
+		<div class="w3-center ceo">
+		    <img src="image/lebss.png">
+		    <h1>BL Realty® | Chief Excecutive Officer</h1>
+		    <h3>Mr. Libe Amaro Bantay</h3>
+		    <p class="qoute">"Saving money is good but investing it is the best, It is better to invest money in realty than to save it in the bank"</p>
+		    <p>PRC Lic.# 0031366 - HLURB Lic.# 01436</p>
+		</div>
+		<div class="col-md-12 net w3-center">
+        <ul class="social-network social-circle">
+            <li><a href="#" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="icoGoogle" title="Gmail"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="#" class="youtube" title="Youtube"><i class="fab fa-youtube"></i></a></li>  
+        </ul>				
+		</div>
+		<div class="sec_8">
+			<div class="hr-sect w3-padding" style="font-family: 'Beth Ellen'; color: #ffffff;">BL Realty®</div>
+		</div>
+	</div>
+
+</div>
+<!---------------sec_9--------------------->
+<div class="w3-center end">
+	<p><a href="#">TERMS AND CONDITION</a> | <a href="#">PRIVACY NOTICE</a></p>
+	<h3>Copyright © 2020 BL Realty. All rights reserved.</h3>
+</div>
+<!----------fixie_buttons----------->
+<a href="#top" id="myBtn" class="btn_back_top"><i class="fas fa-chevron-up"></i></a>
+<a href="#" class="meme fa-3x"><i class="fab fa-facebook-messenger "></i></a>
+<!-----------javascript------------>
+<script type="text/javascript">
+$(document).ready(function(){// Add smooth scrolling to all links
+  $("a").on('click', function(event) {  
+    if (this.hash !== "") {// Make sure this.hash has a value before overriding default behavior   
+      event.preventDefault();// Prevent default anchor click behavior    
+      var hash = this.hash;// Store hash
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;// Add hash (#) to URL when done scrolling (default click behavior)
+      });
+    } // End if
+  });
+});
+
+var mybutton = document.getElementById("myBtn");//scroll up button
+window.onscroll = function() {scrollFunction()};// When the user scrolls down 20px from the top of the document, show the button
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
+<!--000_STARTER_OFFER hostiger-->
